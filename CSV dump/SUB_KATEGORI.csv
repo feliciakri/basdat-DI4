@@ -1,0 +1,81 @@
+kode,kode_kategori,nama
+SK001,K01,Atasan
+SK002,K01,Celana
+SK003,K01,Dress
+SK004,K01,Outerwear
+SK005,K01,Setelan
+SK006,K01,Batik Wanita
+SK007,K01,Pakaian Dalam Wanita
+SK008,K01,Tas
+SK009,K01,Sepatu
+SK010,K01,Jam Tangan
+SK011,K01,Perhiasan
+SK012,K01,Aksesoris
+SK013,K01,Aksesoris Rambut
+SK014,K01,Perlengkapan Couple
+SK015,K01,Baju Tidur
+SK016,K01,Perlengkapan Jahit
+SK017,K02,Jam Tangan
+SK018,K02,Baju Tidur
+SK019,K02,Pakaian Dalam Pria
+SK020,K02,Outerwear
+SK021,K02,Sepatu
+SK022,K02,Tas
+SK023,K02,Perhiasan Fashion
+SK024,K02,Aksesoris
+SK025,K02,Celana
+SK026,K02,Batik Pria
+SK027,K02,Atasan
+SK028,K03,Outerwear
+SK029,K03,Setelan Muslim
+SK030,K03,Dress
+SK031,K03,Scarf
+SK032,K03,Baju Muslim Anak
+SK033,K03,Atasan
+SK034,K03,Aksesoris Jilbab
+SK035,K03,Bawahan
+SK036,K03,Perlengkapan Ibadah
+SK037,K04,Perhiasan Anak
+SK038,K04,Sepatu Anak Perempuan
+SK039,K04,Aksesoris Rambut Anak
+SK040,K04,Aksesoris Anak
+SK041,K04,Tas Anak
+SK042,K04,Sepatu Anak Laki-laki
+SK043,K04,Pakaian Anak Perempuan
+SK044,K04,Pakaian Anak Laki-Laki
+SK045,K05,Kosmetik
+SK046,K05,Perawatan Wajah
+SK047,K05,"Perawatan Tangan, Kaki dan Kuku"
+SK048,K05,Perawatan Rambut
+SK049,K05,Perawatan Mata
+SK050,K05,Styling Rambut
+SK051,K05,Peralatan Make Up
+SK052,K05,Grooming
+SK053,K05,Mandi & Perawatan Tubuh
+SK054,K06,Telinga
+SK055,K06,Kesehatan Wanita
+SK056,K06,Obat & Alat Kesehatan
+SK057,K06,Health Products
+SK058,K06,Kesehatan Gigi & Mulut
+SK059,K06,Diet & Vitamin
+SK060,K06,Kesehatan Mata
+SK061,K06,Perlengkapan Medis
+SK062,K06,Kesehatan Lainnya
+SK063,K07,Aksesoris Bayi
+SK064,K08,Kamar Tidur
+SK065,K09,Handphone
+SK066,K10,Laptop
+SK067,K11,Komputer
+SK068,K12,TV
+SK069,K13,Kamera
+SK070,K14,Aksesoris Mobil
+SK071,K15,Basket
+SK072,K16,Musik
+SK073,K17,Peralatan Dapur
+SK074,K18,Alat Tulis
+SK075,K19,Boneka
+SK076,K20,Figure
+SK077,K21,Makanan
+SK078,K21,Minuman
+SK079,K22,Buku Sekolah
+SK080,K22,Novel Sastra
