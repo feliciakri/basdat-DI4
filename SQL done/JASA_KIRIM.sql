@@ -1,0 +1,10 @@
+insert into JASA_KIRIM values('JNE REGULER','1-3','8000');
+insert into JASA_KIRIM values('JNE YES','1','15000');
+insert into JASA_KIRIM values('JNE OKE','2-4','5000');
+insert into JASA_KIRIM values('TIKI REGULER','1-3','9000');
+insert into JASA_KIRIM values('POS PAKET BIASA','1-3','7000');
+insert into JASA_KIRIM values('POS PAKET KILAT','1-2','12000');
+insert into JASA_KIRIM values('WAHANA','1-3','8000');
+insert into JASA_KIRIM values('J&T EXPRESS','1-2','14000');
+insert into JASA_KIRIM values('PAHALA','2-3','7000');
+insert into JASA_KIRIM values('LION PARCEL','1-3','10000');
