@@ -1,0 +1,5 @@
+INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('owhittington0@si.edu','Uz9WHeB','Octavia Whittington','P','9/3/1978',081972076578,'Jl. Forest no. 223, Tawau 91010');
+INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('rtarbert1@posterous.com','YDdW7mGuMV1','Robinetta Tarbert','L','12/9/2004',082915347409,'Jl. Wayridge no. 482, Zuitou');
+INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('rbrandenburg2@apple.com','QyDSasnQj','Ranee Brandenburg','P','31/12/1953',081148042572,'Jl. Lakeland no. 507, Korczyna 38-420');
+INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('rdeere3@deviantart.com','bHlOeDl35n','Ringo Deere','L','7/2/1947',086530039085,'Jl. Warbler no. 773, Şuraabad');
+INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('mmaraga4@timesonline.co.uk','XqriRmiFm08','Mariele Maraga','L','18/10/1950',082388377984,'Jl. Algoma no. 306, Örnsköldsvik 891 30');
