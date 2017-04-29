@@ -1,18 +1,10 @@
 CREATE OR REPLACE FUNCTION upd_stok()
 RETURNS TRIGGER AS
 $$
-DECLARE
-	var1 CHAR(8);
 BEGIN
 IF(TG_OP = 'INSERT') THEN
-	SELECT kode_produk into var1
-	FROM SHIPPED_PRODUK
-	WHERE kode_produk = NEW.kode_produk
-	IF(NEW.kode_produk = var1)
-		UPDATE SHIPPED_PRODUK
-		SET stok += NEW.stok
-		WHERE kode_produk = NEW.kode_produk
-	END IF;
+	UPDATE SHIPPED_PRODUK SP SET stok = stok - NEW.kuantitas
+	WHERE SP.kode_produk = NEW.kode_produk;
 	RETURN NEW;
 END IF;
 
@@ -46,7 +38,7 @@ END;
 $$
 LANGUAGE plpgsql;
 
-CREATE TRIGGER upd_stok_trigger()
-AFTER INSERT, UPDATE, DELETE
-ON SHIPPED_PRODUK
+CREATE TRIGGER upd_stok_trigger
+AFTER INSERT OR UPDATE OR DELETE
+ON LIST_ITEM FOR EACH ROW
 EXECUTE PROCEDURE upd_stok();
