@@ -15,26 +15,33 @@ VALUES ('V0000501','S0000251',9,2,3500000,7137000);
 #lihat stok produk, harusnya berkurang
 SELECT * FROM SHIPPED_PRODUK WHERE kode_produk = 'S0000251';
 
+############################################################
+#ganti kode produk?
+UPDATE LIST_ITEM SET kode_produk = 'S0000250' WHERE kode_produk = 'S0000251' AND no_invoice = 'V0000501';
+
+#ubah balik
+UPDATE LIST_ITEM SET kode_produk = 'S0000250' WHERE kode_produk = 'S000025' AND no_invoice = 'V0000501';
+
 #new kode != null, ga ada kuantitas --> test kalo ini eror
-UPDATE LIST_ITEM SET berat = 4 WHERE kode_produk = 'S0000251';
+UPDATE LIST_ITEM SET berat = 4 WHERE kode_produk = 'S0000251' AND no_invoice = 'V0000501';
 
 #lihat stok produk
-SELECT * FROM SHIPPED_PRODUK WHERE kode_produk = 'S0000251';
+SELECT * FROM SHIPPED_PRODUK WHERE kode_produk = 'S0000251' AND no_invoice = 'V0000501';
 
 #kuantitas lebih dari sebelumnya
-UPDATE LIST_ITEM SET kuantitas = 5 WHERE kode_produk = 'S0000251';
+UPDATE LIST_ITEM SET kuantitas = 5 WHERE kode_produk = 'S0000251' AND no_invoice = 'V0000501';
 
 #lihat stok produk
-SELECT * FROM SHIPPED_PRODUK WHERE kode_produk = 'S0000251';
+SELECT * FROM SHIPPED_PRODUK WHERE kode_produk = 'S0000251' AND no_invoice = 'V0000501';
 
 #kuantitas kurang dari sebelumnya
-UPDATE LIST_ITEM SET kuantitas = 1 WHERE kode_produk = 'S0000251';
+UPDATE LIST_ITEM SET kuantitas = 1 WHERE kode_produk = 'S0000251' AND no_invoice = 'V0000501';
 
 #lihat stok produk
-SELECT * FROM SHIPPED_PRODUK WHERE kode_produk = 'S0000251';
+SELECT * FROM SHIPPED_PRODUK WHERE kode_produk = 'S0000251' AND no_invoice = 'V0000501';
 
 #delete list
-DELETE FROM LIST_ITEM WHERE kode_produk = 'S0000251';
+DELETE FROM LIST_ITEM WHERE kode_produk = 'S0000251' AND no_invoice = 'V0000501';
 
 #lihat stok produk
-SELECT * FROM SHIPPED_PRODUK WHERE kode_produk = 'S0000251';
+SELECT * FROM SHIPPED_PRODUK WHERE kode_produk = 'S0000251' AND no_invoice = 'V0000501';
