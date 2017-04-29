@@ -1,5 +1,5 @@
 no_invoice,tanggal,waktu_bayar,status,total_bayar,email_pembeli,nama_toko,alamat_kirim,biaya_kirim,no_resi,nama_jasa_kirim
-V00001,25/2/2017,,1,7137000,jwheelwright6u@i2i.jp,solution-oriented Electronics,"Jl. International no. 87, K’ulashi ",43,KUS8236508841823,J&T EXPRESS
+V00001,25/2/2017,,1,7137000,jwheelwright6u@i2i.jp,solution-oriented Electronics,"Jl. International no. 87, Kulashi ",43,KUS8236508841823,J&T EXPRESS
 V00002,27/7/2016,,1,656000,lbarbrookm@google.co.uk,analyzing Computers,"Jl. Hoffman no. 397, Lintingkou ",93,LNN4333369641433,PAHALA
 V00003,27/4/2016,29/04/2016 08:04,3,3032000,bcradick3t@squidoo.com,Future-proofed Toys,"Jl. Claremont no. 773, Kadubadak ",35,KDA7824471641782,WAHANA
 V00004,29/12/2016,01/01/2017 05:34,4,9594000,mgarric5@amazon.de,installation Computers,"Jl. Helena no. 362, Fenglin ",97,FNI0469892841046,PAHALA
@@ -62,7 +62,7 @@ V000060,29/6/2016,02/07/2016 08:11,4,1296000,fsothern6c@dailymail.co.uk,asynchro
 V000061,4/1/2017,07/01/2017 22:17,2,5237000,mvedikhov3i@linkedin.com,Customer-focused Kids,"Jl. Harbort no. 615, Banatski Dvor ",29,BNS0628653841062,J&T EXPRESS
 V000062,12/5/2016,14/05/2016 00:57,4,7346000,pworsfold3n@chron.com,Re-engineered Jewelery,"Jl. Fulton no. 10, Skene 511 81",87,SEO4464103641446,PAHALA
 V000063,2/9/2016,04/09/2016 10:02,4,6323000,lgreenig18@loc.gov,Secured Baby,"Jl. Duke no. 164, Serebryanyye Prudy 142970",76,SRR9250182741925,LION PARCEL
-V000064,16/2/2017,18/02/2017 19:32,3,5924000,jwheelwright6u@i2i.jp,Implemented Games,"Jl. Bultman no. 570, Da’an ",78,D’02537278410253,LION PARCEL
+V000064,16/2/2017,18/02/2017 19:32,3,5924000,jwheelwright6u@i2i.jp,Implemented Games,"Jl. Bultman no. 570, Daan ",78,D02537278410253,LION PARCEL
 V000065,26/8/2016,29/08/2016 19:49,2,7666000,sphidgin3y@newyorker.com,Stand-alone Music,"Jl. Del Mar no. 853, Dulag 6505",16,DL56904227415690,PAHALA
 V000066,30/5/2016,03/06/2016 01:25,4,5225000,sricardin6s@furl.net,mission-critical Electronics,"Jl. Ludington no. 182, Takahagi 350-1213",80,TKA6451754641645,LION PARCEL
 V000067,29/2/2016,,1,442000,kchastelain6l@ucsd.edu,Compatible Outdoors,"Jl. Golden Leaf no. 303, Banjar Bengkelgede ",99,BNR7268176541726,LION PARCEL
@@ -122,7 +122,7 @@ V0000120,3/10/2016,06/10/2016 21:05,2,119000,zbaybutt6w@cafepress.com,alliance T
 V0000121,16/5/2016,19/05/2016 14:09,4,9807000,nrentoll4q@nytimes.com,circuit Automotive,"Jl. Rigney no. 719, Leeds LS6",72,LEENG85770436418,JNE YES
 V0000122,30/6/2016,04/07/2016 10:24,4,3072000,mborlease2g@com.com,analyzer Computers,"Jl. Forest Run no. 58, Chowṉêy ",62,COê9422827641942,JNE REGULER
 V0000123,28/4/2016,01/05/2016 02:10,2,3269000,nleither16@google.it,mission-critical Electronics,"Jl. Warrior no. 973, Likwatang Timur ",55,LKT9149081641914,POS PAKET KILAT
-V0000124,12/1/2016,16/01/2016 17:07,3,3134000,msapwellf@wikimedia.org,Robust Garden,"Jl. Tony no. 245, Yong’an ",60,YNA0748162541074,WAHANA
+V0000124,12/1/2016,16/01/2016 17:07,3,3134000,msapwellf@wikimedia.org,Robust Garden,"Jl. Tony no. 245, Yongan ",60,YNA0748162541074,WAHANA
 V0000125,19/5/2016,21/05/2016 16:58,2,6536000,bfalshaw2@about.me,Up-sized Movies,"Jl. Lien no. 171, Penanggal ",84,PNG2117763641211,PAHALA
 V0000126,25/6/2016,,1,213000,agrimestone5s@jimdo.com,Future-proofed Toys,"Jl. Corben no. 736, Kassel 34132",43,KSLHE61458866416,JNE REGULER
 V0000127,18/12/2016,22/12/2016 17:37,3,805000,blemasney2w@yelp.com,Implemented Grocery,"Jl. Logan no. 368, Daqiao ",67,DQO5362802841536,JNE REGULER
@@ -130,7 +130,7 @@ V0000128,28/11/2016,02/12/2016 16:37,3,3690000,gpickervancew@va.gov,knowledge ba
 V0000129,16/4/2017,18/04/2017 12:33,2,6497000,bmacmanus3e@arstechnica.com,customer loyalty Movies,"Jl. Dwight no. 613, Hošťka 348 06",22,HšA7306432941730,POS PAKET BIASA
 V0000130,8/1/2017,,1,5665000,svezey6j@va.gov,monitoring Books,"Jl. Schurz no. 977, Yushu ",57,YS22107838412210,JNE REGULER
 V0000131,11/10/2016,,1,4787000,lshillingford37@godaddy.com,global Tools,"Jl. Northport no. 447, Jabłonica Polska 38-421",17,JBN2839226741283,J&T EXPRESS
-V0000132,6/6/2016,10/06/2016 20:16,2,2286000,mkeays6h@posterous.com,Ameliorated Movies,"Jl. Jay no. 943, Long’an Chengxiangzhen ",48,LNA7714425641771,POS PAKET KILAT
+V0000132,6/6/2016,10/06/2016 20:16,2,2286000,mkeays6h@posterous.com,Ameliorated Movies,"Jl. Jay no. 943, Longan Chengxiangzhen ",48,LNA7714425641771,POS PAKET KILAT
 V0000133,19/11/2016,21/11/2016 08:20,2,2508000,ccheale1p@bbc.co.uk,Compatible Outdoors,"Jl. Graceland no. 46, Morón 1765",2,MR54634597415463,WAHANA
 V0000134,12/5/2016,16/05/2016 18:56,3,4332000,snavein2h@yolasite.com,Advanced Baby,"Jl. Waywood no. 807, Patemon ",22,PTO6639703641663,LION PARCEL
 V0000135,21/2/2016,23/02/2016 01:38,4,6069000,vkippie2n@google.ru,algorithm Garden,"Jl. Cardinal no. 913, Inuyama 938-0043",73,IUM3868106541386,POS PAKET BIASA
@@ -167,7 +167,7 @@ V0000165,12/4/2016,16/04/2016 00:48,4,2778000,ktilbey2m@freewebs.com,Stand-alone
 V0000166,7/7/2016,09/07/2016 19:52,3,3191000,lbambrick2p@sfgate.com,mission-critical Electronics,"Jl. 8th no. 983, Kosiv ",82,KS77112976417711,LION PARCEL
 V0000167,17/4/2017,,1,8336000,mmobley2o@mac.com,Compatible Outdoors,"Jl. Moland no. 113, Torsås 385 30",57,TRSH392654294139,LION PARCEL
 V0000168,2/3/2016,05/03/2016 00:44,3,3138000,bbisseker4m@g.co,asynchronous Industrial,"Jl. Parkside no. 411, Petong ",88,PTG7649786541764,POS PAKET KILAT
-V0000169,15/1/2016,18/01/2016 21:02,4,5281000,gmorgans14@nba.com,analyzing Computers,"Jl. Prentice no. 959, L’govskiy 307754",69,LGS0271982541027,LION PARCEL
+V0000169,15/1/2016,18/01/2016 21:02,4,5281000,gmorgans14@nba.com,analyzing Computers,"Jl. Prentice no. 959, Lgovskiy 307754",69,LGS0271982541027,LION PARCEL
 V0000170,14/6/2016,,1,6390000,gjanning3@opensource.org,grid-enabled Music,"Jl. Browning no. 396, Devitsa 397815",17,DVS1242885641124,PAHALA
 V0000171,21/2/2016,,1,5458000,bcradick3t@squidoo.com,Re-contextualized Automotive,"Jl. Mendota no. 784, Kinango ",84,KNG7067206541706,JNE YES
 V0000172,22/2/2017,26/02/2017 19:29,2,5707000,nverlinde5l@globo.com,Face to face Electronics,"Jl. Talmadge no. 66, Navatat 0905",51,NVA9871977841987,POS PAKET BIASA
@@ -288,7 +288,7 @@ V0000286,3/1/2017,06/01/2017 20:20,3,8830000,awinchurst5v@cloudflare.com,Re-engi
 V0000287,27/3/2017,31/03/2017 01:40,4,376000,smeachen33@chronoengine.com,Business-focused Jewelery,"Jl. Upham no. 752, Pringgabaya ",70,PIG3188750941318,PAHALA
 V0000288,11/5/2016,13/05/2016 03:27,2,2618000,rbuckland36@last.fm,Quality-focused Music,"Jl. Stuart no. 354, Santo Tomé 3016",89,SN 6327392641632,JNE REGULER
 V0000289,2/8/2016,04/08/2016 03:19,2,915000,gberthouloume4w@delicious.com,Face to face Electronics,"Jl. Bobwhite no. 250, Ngaliyan ",66,NAY2997010741299,TIKI REGULER
-V0000290,10/5/2016,14/05/2016 03:33,2,7907000,lfendleyc@amazon.co.uk,Stand-alone Music,"Jl. Fair Oaks no. 221, Arrap’i ",13,AR’3911582641391,POS PAKET BIASA
+V0000290,10/5/2016,14/05/2016 03:33,2,7907000,lfendleyc@amazon.co.uk,Stand-alone Music,"Jl. Fair Oaks no. 221, Arrapi ",13,AR3911582641391,POS PAKET BIASA
 V0000291,1/1/2017,04/01/2017 15:33,4,7567000,ccheale1p@bbc.co.uk,groupware Books,"Jl. Prairieview no. 446, Xieji ",94,XE41848238414184,POS PAKET BIASA
 V0000292,6/7/2016,,1,8965000,fboheao@baidu.com,radical Movies,"Jl. Moulton no. 565, Klenak ",43,KEK6728187641672,PAHALA
 V0000293,11/11/2016,14/11/2016 03:12,4,4628000,kaleevyq@msn.com,instruction set Beauty,"Jl. Logan no. 174, Thap Than 61120",60,TAT8793388741879,LION PARCEL
@@ -416,7 +416,7 @@ V0000414,15/6/2016,17/06/2016 09:58,4,8061000,kde3g@ebay.co.uk,time-frame Health
 V0000415,7/7/2016,10/07/2016 21:08,4,980000,fsothern6c@dailymail.co.uk,asynchronous Industrial,"Jl. Coolidge no. 578, Shatian ",95,SAA4175297641417,WAHANA
 V0000416,20/11/2016,23/11/2016 02:17,4,8180000,msaltsberger69@hud.gov,groupware Books,"Jl. Canary no. 108, San Juan 6227",55,SNU2328069741232,POS PAKET BIASA
 V0000417,14/3/2017,18/03/2017 13:20,2,3233000,forudden6m@webeden.co.uk,non-volatile Games,"Jl. Towne no. 465, San Cristóbal 11511",47,SNR6567949841656,POS PAKET BIASA
-V0000418,13/3/2017,,1,2992000,jwillard5r@51.la,Business-focused Jewelery,"Jl. Cherokee no. 23, Jin’an ",43,JNN8669639841866,PAHALA
+V0000418,13/3/2017,,1,2992000,jwillard5r@51.la,Business-focused Jewelery,"Jl. Cherokee no. 23, Jinan ",43,JNN8669639841866,PAHALA
 V0000419,12/12/2016,15/12/2016 12:12,2,7824000,mborlease2g@com.com,conglomeration Jewelery,"Jl. Grasskamp no. 65, Nampera ",69,NMR9774451841977,JNE OKE
 V0000420,30/8/2016,02/09/2016 22:09,3,7610000,mdraysay5z@weibo.com,alliance Toys,"Jl. Melody no. 440, Macia ",37,MC34949527413494,JNE REGULER
 V0000421,11/2/2017,15/02/2017 11:17,2,1531000,vburchill4t@sohu.com,circuit Automotive,"Jl. Cascade no. 847, Lanipao 9313",61,LNA1281186841128,JNE YES
