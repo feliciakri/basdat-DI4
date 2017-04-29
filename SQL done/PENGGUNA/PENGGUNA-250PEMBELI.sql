@@ -41,7 +41,7 @@ INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat)
 INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('gmorgans14@nba.com','ieRleMGJY','Greer Morgans','L','11/9/1983',089947720529,'Jl. Sage no. 387, Bajo Pichanaqui');
 INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('wgoldingay15@shop-pro.jp','HZdVCI','Wyatt Goldingay','P','8/1/1989',085749363541,'Jl. Forster no. 203, Tampakan 9507');
 INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('nleither16@google.it','tZqcGm2RAM6','Noami Leither','P','27/5/1943',081287534952,'Jl. Old Gate no. 325, Yinjiang');
-INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('rpigott17@vimeo.com','2KXB7eBifQ0e','Rene Pigott','L','7/10/1941',083838217143,'Jl. Armistice no. 361, Tam Bình');
+INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('rpigott17@vimeo.com','2KXB7eBifQ0e','Rene Pigott','L','7/10/1941',083838217143,'Jl. Armistice no. 361, Tam Binh');
 INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('lgreenig18@loc.gov','ir91aXRH','Lindsy Greenig','P','27/9/1940',085465927388,'Jl. Rigney no. 574, Huambalpa');
 INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('lcrichley19@noaa.gov','QEbw3vYpDVt','Linette Crichley','P','4/8/1956',084464299383,'Jl. Loeprich no. 138, Pindi Bhattiān 52181');
 INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('hlinklet1a@answers.com','6yOQHbEK','Hugo Linklet','L','4/11/1981',083809332578,'Jl. Longview no. 669, Mayanhe');
@@ -146,7 +146,7 @@ INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat)
 INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('rhaselhurst41@netvibes.com','brHOQz','Robinet Haselhurst','L','16/5/1940',085060224263,'Jl. Evergreen no. 468, Kočevje 1330');
 INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('egiles42@sitemeter.com','GNeuKPwkgG','Ermin Giles','L','5/11/1931',086087726649,'Jl. Arizona no. 618, Lambayong 2624');
 INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('uguiducci43@istockphoto.com','rmcrQhyi02','Urbain Guiducci','L','6/10/2002',084184962206,'Jl. Summer Ridge no. 688, Culasian 6530');
-INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('cchastenet44@jiathis.com','sAosDlx','Cheri Chastenet','P','1/8/1975',081734887156,'Jl. Steensland no. 439, Bi’r Ḩāt');
+INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('cchastenet44@jiathis.com','sAosDlx','Cheri Chastenet','P','1/8/1975',081734887156,'Jl. Steensland no. 439, Bir Ḩāt');
 INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('ghurleston45@netlog.com','eoknUYHdZwV','Gaylor Hurleston','P','9/1/1988',082154487163,'Jl. Lawn no. 539, Banqiaodian');
 INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('mcollyns46@1und1.de','onnDlPtAuSlK','Mitchel Collyns','P','14/3/1985',085078664484,'Jl. Nova no. 273, Rathnew R35');
 INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('cvigars47@irs.gov','zhf0JF54yGDS','Clarice Vigars','L','7/1/1998',088291429923,'Jl. Springs no. 675, Ymittos');
@@ -216,7 +216,7 @@ INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat)
 INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('mdraysay5z@weibo.com','4wpzJqxDO3C','Matilde Draysay','P','1/6/1952',087966446221,'Jl. Corben no. 370, Dayou');
 INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('scantu60@icio.us','MrlUJHSZeV','Starla Cantu','P','11/1/1967',089688331346,'Jl. Katie no. 871, Krajandadapmulyo');
 INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('tblackway61@51.la','VGZxh88Ldloq','Teressa Blackway','P','13/10/1981',089041936071,'Jl. Towne no. 720, Boquira 46530-000');
-INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('ryedall62@arizona.edu','0wN9o2d','Rad Yedall','P','22/9/1975',084184083560,'Jl. Scofield no. 253, P’asanauri');
+INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('ryedall62@arizona.edu','0wN9o2d','Rad Yedall','P','22/9/1975',084184083560,'Jl. Scofield no. 253, Pasanauri');
 INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('gkristoffersen63@businesswire.com','gtCpL8083uY','Garey Kristoffersen','P','9/5/1972',089465850478,'Jl. Portage no. 66, Sufang');
 INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('cnewling64@hc360.com','BIzHo1','Clayson Newling','P','24/11/1959',089159608191,'Jl. Starling no. 679, Amaury');
 INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('medgell65@arizona.edu','u7BV78H','Micaela Edgell','P','4/4/1997',085523555260,'Jl. Red Cloud no. 85, Dolinsk 102745');
@@ -231,7 +231,7 @@ INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat)
 INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('kmiddlemiss6e@umn.edu','riCwpK4vQjP','Katrinka Middlemiss','L','11/7/1973',084351860045,'Jl. Mallard no. 570, Vuzenica 2367');
 INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('jguice6f@cyberchimps.com','4hZJQyR','Jacinthe Guice','P','6/6/1987',088825342280,'Jl. Michigan no. 434, Jajaway');
 INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('astandell6g@washington.edu','enS7FNm7wgh1','Ashbey Standell','L','3/10/1967',088204822346,'Jl. Spohn no. 123, Heping');
-INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('mkeays6h@posterous.com','fEj8rXp1MNZ','Marita Keays','L','30/12/1956',083800668752,'Jl. Anderson no. 999, Li’an');
+INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('mkeays6h@posterous.com','fEj8rXp1MNZ','Marita Keays','L','30/12/1956',083800668752,'Jl. Anderson no. 999, Lian');
 INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('fdarrington6i@unblog.fr','xy1D1cOZ','Frederica Darrington','L','8/9/1963',080190617622,'Jl. Service no. 479, Changchi');
 INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('svezey6j@va.gov','i6u7FLKGk','Susana Vezey','L','31/1/1986',081232581509,'Jl. Emmet no. 298, Cololaca');
 INSERT INTO PENGGUNA(email,password,nama,jenis_kelamin,tgl_lahir,no_telp,alamat) VALUES ('servine6k@macromedia.com','taljsx5umTjz','Shanon Ervine','L','16/11/1954',086400482295,'Jl. Melody no. 920, Alangilanan 2420');
