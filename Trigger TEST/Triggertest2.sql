@@ -1,4 +1,7 @@
 #tambah produk
+INSERT INTO PRODUK(kode_produk,nama,harga,deskripsi) VALUES ('S0000251','Streamlined Pakaian Anak Perempuan Fuscia','821000','Streamlined Pakaian Anak Perempuan Fuscia  Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.');
+
+#tambah produk
 INSERT INTO SHIPPED_PRODUK(kode_produk,kategori,nama_toko,is_asuransi,stok,is_baru,min_order,min_grosir,max_grosir,harga_grosir,foto)
 VALUES ('S0000251','SK001','explicit Clothing','false',10000,'true',1,12,500,3500000,'explicitClothing.png');
 
