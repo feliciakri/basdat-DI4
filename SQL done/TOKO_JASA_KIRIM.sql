@@ -15,7 +15,7 @@ INSERT INTO TOKO_JASA_KIRIM(nama_toko,jasa_kirim) VALUES ('time-frame Health','J
 INSERT INTO TOKO_JASA_KIRIM(nama_toko,jasa_kirim) VALUES ('asynchronous Industrial','WAHANA');
 INSERT INTO TOKO_JASA_KIRIM(nama_toko,jasa_kirim) VALUES ('groupware Books','POS PAKET BIASA');
 INSERT INTO TOKO_JASA_KIRIM(nama_toko,jasa_kirim) VALUES ('non-volatile Games','POS PAKET BIASA');
-INSERT INTO TOKO_JASA_KIRIM(nama_toko,jasa_kirim) VALUES ('Business-focused Jewelery','PAHALA');
+INSERT INTO TOKO_JASA_KIRIM(nama_toko,jasa_kirim) VALUES ('Business-focused Jewelery','JNE OKE');
 INSERT INTO TOKO_JASA_KIRIM(nama_toko,jasa_kirim) VALUES ('conglomeration Jewelery','JNE OKE');
 INSERT INTO TOKO_JASA_KIRIM(nama_toko,jasa_kirim) VALUES ('alliance Toys','JNE REGULER');
 INSERT INTO TOKO_JASA_KIRIM(nama_toko,jasa_kirim) VALUES ('circuit Automotive','JNE YES');
@@ -55,7 +55,7 @@ INSERT INTO TOKO_JASA_KIRIM(nama_toko,jasa_kirim) VALUES ('tertiary Home','TIKI 
 INSERT INTO TOKO_JASA_KIRIM(nama_toko,jasa_kirim) VALUES ('analyzing Computers','POS PAKET BIASA');
 INSERT INTO TOKO_JASA_KIRIM(nama_toko,jasa_kirim) VALUES ('software Books','TIKI REGULER');
 INSERT INTO TOKO_JASA_KIRIM(nama_toko,jasa_kirim) VALUES ('asymmetric Baby','J&T EXPRESS');
-INSERT INTO TOKO_JASA_KIRIM(nama_toko,jasa_kirim) VALUES ('empowering Beauty','LION PARCEL');
+INSERT INTO TOKO_JASA_KIRIM(nama_toko,jasa_kirim) VALUES ('empowering Beauty','PAHALA');
 INSERT INTO TOKO_JASA_KIRIM(nama_toko,jasa_kirim) VALUES ('analyzing Computers','WAHANA');
 INSERT INTO TOKO_JASA_KIRIM(nama_toko,jasa_kirim) VALUES ('asynchronous Industrial','J&T EXPRESS');
 INSERT INTO TOKO_JASA_KIRIM(nama_toko,jasa_kirim) VALUES ('Customer-focused Kids','J&T EXPRESS');
@@ -88,7 +88,7 @@ INSERT INTO TOKO_JASA_KIRIM(nama_toko,jasa_kirim) VALUES ('Business-focused Jewe
 INSERT INTO TOKO_JASA_KIRIM(nama_toko,jasa_kirim) VALUES ('Quality-focused Music','JNE REGULER');
 INSERT INTO TOKO_JASA_KIRIM(nama_toko,jasa_kirim) VALUES ('Face to face Electronics','TIKI REGULER');
 INSERT INTO TOKO_JASA_KIRIM(nama_toko,jasa_kirim) VALUES ('Stand-alone Music','POS PAKET BIASA');
-INSERT INTO TOKO_JASA_KIRIM(nama_toko,jasa_kirim) VALUES ('groupware Books','POS PAKET BIASA');
+INSERT INTO TOKO_JASA_KIRIM(nama_toko,jasa_kirim) VALUES ('groupware Books','PAHALA');
 INSERT INTO TOKO_JASA_KIRIM(nama_toko,jasa_kirim) VALUES ('radical Movies','PAHALA');
 INSERT INTO TOKO_JASA_KIRIM(nama_toko,jasa_kirim) VALUES ('instruction set Beauty','LION PARCEL');
 INSERT INTO TOKO_JASA_KIRIM(nama_toko,jasa_kirim) VALUES ('installation Computers','J&T EXPRESS');
