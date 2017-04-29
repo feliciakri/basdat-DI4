@@ -1,251 +1,251 @@
 kode_produk,kategori,nama_toko,is_asuransi,stok,is_baru,min_order,min_grosir,max_grosir,harga_grosir,foto
-S00001,SK061,JNE YES,false,540,true,2,26,96,754067,PretiumIaculisDiam.gif
-S00002,SK063,JNE OKE,false,658,true,20,25,72,169643,EgestasMetusAenean.tiff
-S00003,SK054,JNE YES,false,374,true,12,41,74,940943,Quis.jpeg
-S00004,SK068,WAHANA,false,370,true,18,39,91,470694,VulputateJusto.png
-S00005,SK059,POS PAKET BIASA,false,92,true,4,30,52,16020,EratVestibulumSed.gif
-S00006,SK022,PAHALA,false,585,false,10,21,68,807568,EgetEros.jpeg
-S00007,SK073,POS PAKET KILAT,false,250,true,20,22,97,825127,AmetNullaQuisque.jpeg
-S00008,SK015,WAHANA,false,304,true,17,22,60,779781,Non.png
-S00009,SK014,WAHANA,false,916,false,11,50,62,655428,VelAugue.png
-S000010,SK002,POS PAKET KILAT,true,839,true,14,47,54,523225,ElitProinRisus.png
-S000011,SK060,PAHALA,true,472,false,12,21,93,360180,JustoMaecenas.jpeg
-S000012,SK051,PAHALA,false,300,true,19,21,61,284549,Mattis.tiff
-S000013,SK057,TIKI REGULER,false,529,true,15,36,97,766951,IpsumPrimis.tiff
-S000014,SK050,LION PARCEL,true,475,true,9,25,80,932664,Faucibus.jpeg
-S000015,SK038,POS PAKET KILAT,true,869,true,3,21,67,379100,Blandit.png
-S000016,SK035,JNE YES,false,132,true,19,22,83,218377,VolutpatErat.png
-S000017,SK020,WAHANA,true,409,false,20,47,53,173318,MagnaAtNunc.jpeg
-S000018,SK067,POS PAKET BIASA,true,851,true,14,41,100,248384,Mauris.jpeg
-S000019,SK045,JNE YES,true,825,true,10,48,70,192485,CrasPellentesque.jpeg
-S000020,SK005,WAHANA,false,342,false,12,33,82,21690,NatoquePenatibusEt.png
-S000021,SK047,LION PARCEL,false,273,true,1,20,66,457012,UtSuscipit.tiff
-S000022,SK069,JNE YES,false,420,false,16,35,86,456179,LuctusTinciduntNulla.tiff
-S000023,SK069,TIKI REGULER,true,945,false,14,22,69,630680,TristiqueFusceCongue.jpeg
-S000024,SK015,LION PARCEL,true,94,true,12,45,98,974249,Elit.png
-S000025,SK007,POS PAKET KILAT,true,601,true,20,43,69,317629,Vel.png
-S000026,SK036,PAHALA,false,272,false,16,39,56,625885,MetusSapien.png
-S000027,SK019,JNE OKE,true,320,true,12,46,83,508865,QuisLiberoNullam.png
-S000028,SK074,POS PAKET BIASA,true,334,true,20,42,88,193935,TortorQuis.tiff
-S000029,SK009,J&T EXPRESS,false,416,false,4,24,99,21269,TempusVivamus.png
-S000030,SK066,JNE REGULER,false,402,true,19,35,71,185796,NonLectus.jpeg
-S000031,SK043,TIKI REGULER,false,581,false,19,22,51,359577,EgetNunc.jpeg
-S000032,SK060,TIKI REGULER,true,95,true,12,44,65,92195,Tempus.gif
-S000033,SK058,POS PAKET KILAT,false,985,false,5,23,55,658266,SemperInterdumMauris.gif
-S000034,SK001,WAHANA,true,305,true,20,39,68,710282,Condimentum.tiff
-S000035,SK031,JNE YES,false,736,false,20,25,73,234142,DolorMorbiVel.jpeg
-S000036,SK008,POS PAKET BIASA,false,679,false,11,25,97,271392,RisusAuctorSed.gif
-S000037,SK012,J&T EXPRESS,false,129,false,15,44,89,104770,Ipsum.gif
-S000038,SK008,JNE REGULER,false,467,false,9,34,52,172468,CubiliaCurae.jpeg
-S000039,SK046,JNE OKE,true,71,true,9,38,58,929519,EstDonec.tiff
-S000040,SK042,WAHANA,false,76,false,1,42,64,451419,SedAnte.gif
-S000041,SK034,POS PAKET KILAT,true,976,true,19,26,87,198252,Ipsum.jpeg
-S000042,SK068,POS PAKET KILAT,true,67,false,7,45,76,276014,Nibh.tiff
-S000043,SK039,LION PARCEL,true,321,false,17,40,91,917810,Eleifend.jpeg
-S000044,SK050,JNE OKE,true,22,true,8,40,83,64538,SedNislNunc.jpeg
-S000045,SK026,TIKI REGULER,true,616,true,12,44,66,447138,DuiNecNisi.tiff
-S000046,SK034,JNE YES,false,829,false,9,28,64,338218,PosuereMetus.tiff
-S000047,SK026,JNE OKE,true,681,false,3,29,61,711867,LoremInteger.gif
-S000048,SK057,TIKI REGULER,false,629,true,16,29,85,544664,NullaQuisque.png
-S000049,SK032,POS PAKET KILAT,false,81,false,10,43,57,232876,EstDonecOdio.jpeg
-S000050,SK037,POS PAKET KILAT,true,732,true,12,26,54,611213,Nulla.gif
-S000051,SK029,TIKI REGULER,false,682,false,17,23,71,412601,Nibh.jpeg
-S000052,SK036,JNE YES,true,61,true,13,28,63,84360,Aliquet.gif
-S000053,SK016,TIKI REGULER,false,279,false,13,37,74,609660,NisiAt.jpeg
-S000054,SK006,JNE YES,true,965,false,19,43,53,656700,EgetElitSodales.gif
-S000055,SK047,JNE OKE,true,134,true,8,27,74,360221,IpsumDolorSit.tiff
-S000056,SK064,POS PAKET KILAT,false,110,true,1,34,69,793166,UltricesPosuere.png
-S000057,SK017,PAHALA,true,193,false,13,23,73,597836,PedeMorbi.jpeg
-S000058,SK025,LION PARCEL,true,500,false,4,24,72,318891,Sit.png
-S000059,SK015,LION PARCEL,true,388,true,19,38,66,224387,Dis.jpeg
-S000060,SK009,JNE OKE,true,472,false,10,28,92,695695,PulvinarSed.tiff
-S000061,SK076,J&T EXPRESS,false,903,true,3,50,60,597925,TempusVelPede.gif
-S000062,SK012,JNE REGULER,false,874,false,4,21,64,804056,SociisNatoque.tiff
-S000063,SK078,POS PAKET KILAT,false,963,true,16,40,86,554,Nulla.gif
-S000064,SK067,PAHALA,false,814,true,19,40,100,73363,CurabiturConvallisDuis.gif
-S000065,SK057,JNE REGULER,false,515,false,17,43,90,592870,Rhoncus.jpeg
-S000066,SK023,POS PAKET BIASA,true,46,false,19,45,78,892876,UltricesAliquetMaecenas.gif
-S000067,SK031,JNE REGULER,true,96,false,10,35,85,325691,Suspendisse.png
-S000068,SK069,TIKI REGULER,true,830,true,15,26,56,583853,VulputateJusto.gif
-S000069,SK002,JNE OKE,false,304,true,17,23,64,37235,MetusArcuAdipiscing.tiff
-S000070,SK066,POS PAKET KILAT,false,26,true,5,44,86,285708,DictumstMaecenasUt.png
-S000071,SK073,PAHALA,true,295,true,14,33,50,176879,InSapienIaculis.gif
-S000072,SK046,POS PAKET BIASA,false,596,true,1,30,82,753044,SociisNatoquePenatibus.jpeg
-S000073,SK047,POS PAKET KILAT,false,807,false,16,39,72,418512,NuncDonecQuis.gif
-S000074,SK079,TIKI REGULER,false,436,true,13,32,97,859771,NonMiInteger.gif
-S000075,SK050,POS PAKET KILAT,true,79,true,15,44,80,210648,Libero.gif
-S000076,SK025,WAHANA,false,395,true,14,39,68,361822,Sed.png
-S000077,SK003,PAHALA,true,756,false,1,46,90,939216,SitAmet.jpeg
-S000078,SK040,JNE OKE,false,817,true,2,34,92,292372,LobortisConvallis.jpeg
-S000079,SK005,WAHANA,true,198,false,10,29,80,797783,Nisi.gif
-S000080,SK020,JNE YES,true,719,true,3,22,98,167442,MaecenasTinciduntLacus.jpeg
-S000081,SK053,JNE OKE,false,255,false,8,39,71,477553,NonQuamNec.jpeg
-S000082,SK040,TIKI REGULER,false,406,false,11,32,98,735757,Elit.jpeg
-S000083,SK058,J&T EXPRESS,true,936,false,5,21,85,635220,AnteIpsum.tiff
-S000084,SK017,JNE YES,false,343,true,18,28,52,772416,FeugiatEt.tiff
-S000085,SK046,JNE YES,false,66,false,5,38,58,966700,Curabitur.tiff
-S000086,SK002,JNE YES,false,659,false,3,20,76,301903,Posuere.tiff
-S000087,SK008,LION PARCEL,false,478,false,19,20,74,760984,OrnareImperdiet.tiff
-S000088,SK025,JNE OKE,true,511,false,15,34,83,468264,VivamusTortorDuis.tiff
-S000089,SK056,TIKI REGULER,true,564,true,1,38,58,869651,ErosElementumPellentesque.tiff
-S000090,SK031,POS PAKET KILAT,false,163,false,12,49,61,981861,PhasellusSitAmet.gif
-S000091,SK055,PAHALA,true,196,false,18,32,81,283341,Felis.tiff
-S000092,SK007,PAHALA,false,49,true,10,49,61,294908,Turpis.gif
-S000093,SK062,POS PAKET KILAT,true,828,true,12,23,58,135186,SedJusto.png
-S000094,SK067,PAHALA,true,108,true,10,34,77,360121,Feugiat.png
-S000095,SK080,PAHALA,true,959,true,17,49,69,611382,CrasNon.jpeg
-S000096,SK022,JNE REGULER,false,598,false,16,24,62,468631,DapibusAugueVel.jpeg
-S000097,SK034,PAHALA,true,549,false,1,41,76,761494,Mauris.tiff
-S000098,SK043,J&T EXPRESS,false,965,true,9,41,91,602906,A.jpeg
-S000099,SK013,JNE OKE,false,528,true,13,50,89,466014,Integer.tiff
-S0000100,SK033,LION PARCEL,true,444,true,18,41,51,458240,SapienUtNunc.tiff
-S0000101,SK044,LION PARCEL,true,943,false,10,20,50,601618,Hac.jpeg
-S0000102,SK029,POS PAKET KILAT,true,474,false,14,29,71,6416,MattisPulvinar.tiff
-S0000103,SK004,JNE YES,false,452,false,13,37,93,550870,AmetConsectetuer.gif
-S0000104,SK061,TIKI REGULER,false,230,false,16,36,59,536140,CurabiturConvallisDuis.tiff
-S0000105,SK042,LION PARCEL,true,812,true,19,40,60,194202,AeneanLectus.gif
-S0000106,SK010,JNE YES,true,284,false,20,32,53,835538,In.jpeg
-S0000107,SK041,JNE REGULER,true,447,false,9,40,66,688007,InPurus.png
-S0000108,SK017,JNE YES,false,679,false,13,37,66,704199,Dis.png
-S0000109,SK051,POS PAKET BIASA,false,321,true,13,24,54,23674,Nonummy.tiff
-S0000110,SK041,JNE REGULER,true,664,false,14,20,77,165449,PulvinarSedNisl.jpeg
-S0000111,SK074,J&T EXPRESS,true,217,true,7,39,98,344071,DonecDiam.tiff
-S0000112,SK037,J&T EXPRESS,false,156,true,16,22,93,506803,SedVestibulum.jpeg
-S0000113,SK078,POS PAKET KILAT,true,956,true,10,24,73,279266,Cubilia.jpeg
-S0000114,SK071,PAHALA,false,245,false,1,47,72,882536,DiamNam.jpeg
-S0000115,SK019,LION PARCEL,false,899,true,5,23,74,870609,HabitassePlateaDictumst.tiff
-S0000116,SK002,WAHANA,false,985,true,9,38,70,328460,ParturientMontes.png
-S0000117,SK076,JNE REGULER,false,664,false,15,35,71,595375,Vel.tiff
-S0000118,SK004,JNE YES,false,827,true,5,30,62,583138,VestibulumVestibulumAnte.jpeg
-S0000119,SK030,J&T EXPRESS,false,748,true,7,48,97,600809,ArcuAdipiscing.gif
-S0000120,SK079,WAHANA,false,144,false,17,27,61,726454,Volutpat.tiff
-S0000121,SK062,JNE REGULER,false,490,true,20,47,81,425952,Vel.gif
-S0000122,SK010,WAHANA,true,18,false,12,37,54,84465,Tortor.jpeg
-S0000123,SK009,JNE REGULER,false,161,true,3,48,96,117639,InterdumInAnte.tiff
-S0000124,SK078,PAHALA,false,897,true,14,22,73,903018,ProinInterdumMauris.png
-S0000125,SK059,LION PARCEL,false,408,false,6,44,75,176104,TinciduntEgetTempus.jpeg
-S0000126,SK062,TIKI REGULER,false,863,false,3,29,52,760092,MolestieHendreritAt.jpeg
-S0000127,SK045,WAHANA,false,776,false,8,20,82,205371,Viverra.png
-S0000128,SK010,PAHALA,false,532,false,17,39,97,888318,SedAnte.jpeg
-S0000129,SK044,PAHALA,false,281,false,9,22,79,950593,AliquamConvallisNunc.jpeg
-S0000130,SK044,WAHANA,false,165,true,2,35,80,13137,Proin.jpeg
-S0000131,SK076,JNE REGULER,true,200,false,2,44,66,472523,Nunc.jpeg
-S0000132,SK038,J&T EXPRESS,true,925,true,8,28,63,400171,SapienInSapien.tiff
-S0000133,SK073,JNE REGULER,true,111,false,11,23,91,252486,Amet.gif
-S0000134,SK020,PAHALA,true,506,true,14,22,60,796207,At.jpeg
-S0000135,SK014,TIKI REGULER,false,742,false,3,35,80,826060,SitAmetSapien.jpeg
-S0000136,SK062,WAHANA,true,84,true,11,49,60,304282,VelitIdPretium.jpeg
-S0000137,SK023,JNE YES,true,968,false,10,42,88,770721,Amet.jpeg
-S0000138,SK013,JNE OKE,true,218,true,1,50,53,412255,TempusSit.tiff
-S0000139,SK043,POS PAKET BIASA,false,824,false,17,26,67,3485,TurpisEnimBlandit.jpeg
-S0000140,SK061,POS PAKET KILAT,false,531,true,1,31,67,240447,Justo.tiff
-S0000141,SK073,JNE OKE,false,939,true,17,22,57,247401,JustoPellentesque.png
-S0000142,SK079,LION PARCEL,true,720,true,6,50,92,289898,LeoOdio.png
-S0000143,SK059,JNE REGULER,false,314,true,8,46,60,658589,BlanditMiIn.gif
-S0000144,SK007,JNE YES,false,24,true,7,21,69,90059,SedInterdum.gif
-S0000145,SK031,LION PARCEL,false,342,true,8,50,51,271759,OrciPedeVenenatis.jpeg
-S0000146,SK030,LION PARCEL,true,61,true,16,24,79,890641,SedNislNunc.png
-S0000147,SK070,WAHANA,false,253,false,10,46,98,877351,RutrumAcLobortis.jpeg
-S0000148,SK073,J&T EXPRESS,true,224,true,15,21,89,850812,AcNibhFusce.tiff
-S0000149,SK019,JNE OKE,true,279,false,6,46,90,114740,Ipsum.tiff
-S0000150,SK030,POS PAKET KILAT,true,193,false,5,22,92,36613,NamTristiqueTortor.tiff
-S0000151,SK075,PAHALA,false,207,false,11,34,94,293586,IaculisJustoIn.gif
-S0000152,SK080,WAHANA,true,88,true,18,22,88,58225,Erat.tiff
-S0000153,SK033,TIKI REGULER,false,15,true,3,28,91,657533,Morbi.tiff
-S0000154,SK033,JNE REGULER,false,515,false,16,42,96,202477,UtErat.gif
-S0000155,SK008,PAHALA,true,372,false,20,25,50,208067,ParturientMontesNascetur.jpeg
-S0000156,SK023,JNE OKE,false,995,false,9,37,86,657468,VelitEu.gif
-S0000157,SK002,JNE OKE,true,479,false,18,49,65,527739,Quis.jpeg
-S0000158,SK037,JNE OKE,false,372,false,14,20,69,425769,Varius.gif
-S0000159,SK062,JNE REGULER,true,913,true,14,43,87,819865,Ultrices.tiff
-S0000160,SK075,POS PAKET KILAT,true,398,true,10,23,87,150634,NonVelit.jpeg
-S0000161,SK067,JNE YES,true,705,false,6,29,84,704054,SollicitudinMi.jpeg
-S0000162,SK010,TIKI REGULER,true,805,false,13,30,74,43628,SedAccumsanFelis.png
-S0000163,SK051,JNE REGULER,true,397,false,1,31,72,767084,AugueVel.gif
-S0000164,SK080,WAHANA,true,807,true,2,50,65,247144,Condimentum.tiff
-S0000165,SK022,WAHANA,false,61,false,2,40,79,338832,Vestibulum.jpeg
-S0000166,SK023,JNE YES,true,164,true,18,38,86,698576,Augue.png
-S0000167,SK073,LION PARCEL,false,86,false,11,39,64,955885,RhoncusAliquam.tiff
-S0000168,SK033,PAHALA,false,893,false,11,29,64,934926,IpsumPrimis.gif
-S0000169,SK054,POS PAKET KILAT,true,548,true,6,46,84,659235,AliquetUltrices.jpeg
-S0000170,SK013,POS PAKET BIASA,true,927,true,3,30,68,140729,ConsequatDuiNec.tiff
-S0000171,SK029,JNE OKE,true,567,true,17,31,54,875127,UtBlanditNon.png
-S0000172,SK066,JNE OKE,true,514,false,9,30,79,365621,RhoncusMaurisEnim.gif
-S0000173,SK026,JNE REGULER,false,760,false,14,42,60,277515,DictumstEtiam.gif
-S0000174,SK012,POS PAKET BIASA,false,312,true,20,20,95,532517,VelitEuEst.jpeg
-S0000175,SK027,TIKI REGULER,true,583,true,17,20,85,115761,Nec.tiff
-S0000176,SK052,J&T EXPRESS,false,421,false,8,41,65,588149,Nulla.tiff
-S0000177,SK007,PAHALA,false,845,true,9,33,62,781962,ProinEuMi.jpeg
-S0000178,SK003,PAHALA,true,769,true,8,26,80,633218,PellentesqueEget.tiff
-S0000179,SK072,JNE YES,true,177,true,10,49,82,313830,InLacusCurabitur.jpeg
-S0000180,SK044,POS PAKET KILAT,true,177,false,18,44,63,495727,Pulvinar.jpeg
-S0000181,SK013,PAHALA,true,878,true,16,40,80,734851,NullaTempus.jpeg
-S0000182,SK005,J&T EXPRESS,true,470,false,20,24,66,256560,Morbi.jpeg
-S0000183,SK017,JNE REGULER,true,620,true,13,41,87,243214,AtFeugiatNon.jpeg
-S0000184,SK027,TIKI REGULER,true,91,true,19,31,79,634948,ImperdietNullamOrci.gif
-S0000185,SK041,J&T EXPRESS,false,900,false,9,24,76,918522,FelisFusce.jpeg
-S0000186,SK001,J&T EXPRESS,false,732,true,20,36,81,516523,NamCongue.jpeg
-S0000187,SK016,JNE YES,true,346,true,4,48,69,57520,ANibhIn.png
-S0000188,SK010,JNE REGULER,true,648,false,13,41,71,920322,Leo.jpeg
-S0000189,SK031,JNE REGULER,true,972,false,20,34,96,462431,Primis.jpeg
-S0000190,SK009,LION PARCEL,false,322,false,6,25,97,942849,PretiumIaculis.gif
-S0000191,SK067,POS PAKET BIASA,true,918,true,13,28,77,273435,DolorVelEst.gif
-S0000192,SK012,LION PARCEL,false,413,true,1,23,100,902721,ConsequatMorbiA.gif
-S0000193,SK017,JNE YES,true,420,false,11,33,94,875495,NibhIn.jpeg
-S0000194,SK024,J&T EXPRESS,true,721,false,20,39,86,873946,Eget.gif
-S0000195,SK042,JNE REGULER,false,461,false,14,36,51,28155,NasceturRidiculus.jpeg
-S0000196,SK067,PAHALA,true,702,true,15,38,74,612371,SapienUrnaPretium.tiff
-S0000197,SK047,J&T EXPRESS,true,765,true,19,27,82,69687,TellusInSagittis.gif
-S0000198,SK031,JNE OKE,false,254,true,4,27,59,396607,Dapibus.jpeg
-S0000199,SK020,TIKI REGULER,false,33,true,11,24,97,625636,BlanditLacinia.png
-S0000200,SK044,PAHALA,true,964,false,16,42,61,438617,Metus.tiff
-S0000201,SK032,JNE REGULER,true,287,true,8,39,99,480700,Condimentum.jpeg
-S0000202,SK079,J&T EXPRESS,false,535,true,7,34,55,381269,ErosElementumPellentesque.jpeg
-S0000203,SK022,PAHALA,false,339,true,4,46,81,298331,Purus.jpeg
-S0000204,SK026,JNE OKE,false,152,true,20,37,80,587837,LaoreetUt.gif
-S0000205,SK036,POS PAKET BIASA,true,152,false,3,26,93,844098,SedSagittis.jpeg
-S0000206,SK075,JNE YES,true,38,false,19,26,55,386772,Orci.tiff
-S0000207,SK002,PAHALA,true,58,true,8,22,55,843223,TinciduntNullaMollis.tiff
-S0000208,SK040,LION PARCEL,true,186,true,5,26,83,478724,Amet.tiff
-S0000209,SK053,POS PAKET KILAT,false,347,true,10,20,61,951637,Volutpat.tiff
-S0000210,SK045,JNE OKE,false,574,true,12,43,99,908350,Cubilia.tiff
-S0000211,SK024,TIKI REGULER,false,932,true,20,49,94,420332,RhoncusMaurisEnim.jpeg
-S0000212,SK050,JNE YES,true,715,false,4,44,62,495617,EstQuam.tiff
-S0000213,SK030,JNE YES,false,308,true,6,43,51,704486,AugueA.jpeg
-S0000214,SK071,WAHANA,true,822,false,6,35,65,569845,EstQuam.jpeg
-S0000215,SK069,WAHANA,false,258,true,7,21,89,918114,DonecVitaeNisi.jpeg
-S0000216,SK040,PAHALA,true,963,false,8,38,56,122362,JustoIn.jpeg
-S0000217,SK002,J&T EXPRESS,false,520,true,15,35,58,193002,PhasellusSitAmet.gif
-S0000218,SK064,JNE YES,false,814,false,1,46,62,732825,MaurisLaoreet.gif
-S0000219,SK040,LION PARCEL,false,972,true,16,27,59,740107,LigulaSuspendisse.tiff
-S0000220,SK072,WAHANA,false,244,true,20,40,92,457589,BibendumFelis.jpeg
-S0000221,SK010,J&T EXPRESS,false,561,false,17,20,65,967645,Nunc.tiff
-S0000222,SK039,PAHALA,true,930,false,6,28,99,593023,LuctusUltriciesEu.gif
-S0000223,SK016,JNE REGULER,false,728,true,1,24,65,912544,Lobortis.jpeg
-S0000224,SK042,TIKI REGULER,true,47,false,2,42,89,242642,EratIdMauris.png
-S0000225,SK019,J&T EXPRESS,false,634,false,11,23,53,235421,EnimInTempor.png
-S0000226,SK045,WAHANA,true,995,true,15,47,54,114249,VelAugue.tiff
-S0000227,SK041,JNE OKE,true,891,true,1,32,52,947455,InterdumMaurisNon.tiff
-S0000228,SK080,POS PAKET BIASA,false,155,false,3,31,69,232606,MolestieNibh.jpeg
-S0000229,SK010,PAHALA,false,408,false,4,40,53,179010,FaucibusCursusUrna.png
-S0000230,SK049,PAHALA,true,237,false,5,38,96,178919,AcLeoPellentesque.jpeg
-S0000231,SK032,JNE YES,false,307,false,20,22,68,149737,IdMassaId.png
-S0000232,SK018,PAHALA,false,617,true,11,34,50,11804,NislNuncNisl.tiff
-S0000233,SK037,JNE REGULER,true,708,false,17,38,57,457239,NullamMolestieNibh.tiff
-S0000234,SK002,TIKI REGULER,false,912,false,14,24,64,124374,Semper.gif
-S0000235,SK031,JNE OKE,true,280,true,2,31,54,509335,ConsequatVarius.png
-S0000236,SK002,LION PARCEL,false,721,false,12,32,53,865708,Tortor.jpeg
-S0000237,SK063,JNE REGULER,false,487,false,8,45,60,694090,MassaId.tiff
-S0000238,SK036,PAHALA,false,181,false,16,37,51,749502,Montes.tiff
-S0000239,SK069,LION PARCEL,false,360,true,14,33,92,67372,EtMagnis.jpeg
-S0000240,SK076,POS PAKET KILAT,true,108,true,5,43,88,583093,DisParturient.jpeg
-S0000241,SK045,PAHALA,false,205,true,1,36,77,782966,DonecVitae.jpeg
-S0000242,SK061,JNE OKE,true,247,false,9,43,59,474150,Lobortis.jpeg
-S0000243,SK068,POS PAKET BIASA,true,967,false,11,38,84,902067,AccumsanTortorQuis.tiff
-S0000244,SK063,PAHALA,true,573,false,10,23,97,635633,Eu.tiff
-S0000245,SK057,POS PAKET KILAT,false,171,true,2,29,80,268609,Posuere.jpeg
-S0000246,SK036,POS PAKET BIASA,true,53,false,13,20,65,791706,QuisTortorId.jpeg
-S0000247,SK005,JNE YES,false,577,true,10,31,61,266902,LigulaPellentesque.png
-S0000248,SK037,POS PAKET BIASA,true,505,true,11,32,80,93555,DiamCrasPellentesque.tiff
-S0000249,SK062,LION PARCEL,false,314,false,17,25,89,908248,At.jpeg
-S0000250,SK053,POS PAKET KILAT,true,218,true,16,35,76,744079,In.png
+S00001,SK019,eco-centric Outdoors,true,228,true,15,26,61,Rp411973000,MagnisDisParturient.gif
+S00002,SK005,eco-centric Industrial,true,868,false,17,40,70,Rp42845000,MorbiUtOdio.tiff
+S00003,SK021,bottom-line Computers,false,963,false,10,33,86,Rp257644000,OdioIn.tiff
+S00004,SK075,empowering Electronics,true,973,false,8,24,50,Rp134008000,Amet.tiff
+S00005,SK015,project Computers,true,463,false,16,36,65,Rp227052000,Tortor.tiff
+S00006,SK013,functionalities Toys,true,606,true,3,24,59,Rp466086000,PenatibusEtMagnis.jpeg
+S00007,SK039,standardization Automotive,false,817,false,14,30,98,Rp299611000,Vel.png
+S00008,SK017,asynchronous Industrial,false,691,true,6,42,94,Rp464670000,Quisque.tiff
+S00009,SK007,Implemented Grocery,false,30,false,10,29,80,Rp427238000,DisParturientMontes.jpeg
+S000010,SK033,solution-oriented Electronics,true,697,false,5,30,100,Rp102440000,InLectusPellentesque.jpeg
+S000011,SK026,functionalities Toys,false,601,true,20,41,78,Rp52569000,NonLigulaPellentesque.jpeg
+S000012,SK068,tertiary Home,false,354,false,11,33,59,Rp894265000,Congue.jpeg
+S000013,SK071,Organic Electronics,false,217,true,19,47,78,Rp344389000,PurusAliquetAt.gif
+S000014,SK074,frame Computers,true,702,true,4,28,93,Rp172391000,PulvinarNullaPede.gif
+S000015,SK017,Secured Baby,false,446,false,2,31,94,Rp706727000,GravidaSem.jpeg
+S000016,SK030,solution-oriented Electronics,false,939,false,17,21,80,Rp596376000,NullaUtErat.jpeg
+S000017,SK051,algorithm Industrial,false,481,false,6,36,75,Rp374848000,IntegerANibh.jpeg
+S000018,SK035,empowering Books,false,155,false,16,25,85,Rp745287000,SitAmet.gif
+S000019,SK022,Robust Garden,false,711,true,5,45,94,Rp951150000,Mi.png
+S000020,SK008,analyzer Computer,true,783,true,18,31,75,Rp971934000,Bibendum.jpeg
+S000021,SK024,eco-centric Outdoors,true,143,true,4,24,77,Rp772478000,MassaTemporConvallis.tiff
+S000022,SK064,Cross-group Health,true,62,true,12,35,82,Rp105356000,Magnis.tiff
+S000023,SK077,Future-proofed Toys,false,958,true,11,22,100,Rp296491000,NequeDuisBibendum.jpeg
+S000024,SK023,Ameliorated Movies,false,576,true,14,35,94,Rp896723000,IdTurpisInteger.tiff
+S000025,SK046,Implemented Games,false,676,false,16,39,70,Rp552487000,LobortisConvallis.gif
+S000026,SK075,explicit Clothing,true,998,false,20,36,74,Rp616858000,QuisOdio.jpeg
+S000027,SK059,software Music,false,544,false,5,29,70,Rp662008000,Nascetur.png
+S000028,SK066,functionalities Home,false,465,false,3,47,99,Rp528998000,UtNullaSed.gif
+S000029,SK044,actuating Outdoors,true,754,true,10,47,80,Rp904675000,Vulputate.tiff
+S000030,SK016,software Books,false,217,false,18,23,57,Rp515961000,MassaDonec.gif
+S000031,SK014,Ameliorated Movies,false,474,true,9,46,67,Rp222645000,At.tiff
+S000032,SK049,concept Industrial,true,671,true,20,27,74,Rp644430000,Gravida.png
+S000033,SK065,concept Industrial,true,39,true,6,43,88,Rp417839000,Donec.png
+S000034,SK056,complexity Tools,true,313,true,20,49,87,Rp590502000,OdioCurabitur.jpeg
+S000035,SK029,installation Computers,true,157,false,4,43,99,Rp108862000,LiberoUtMassa.tiff
+S000036,SK070,Quality-focused Music,false,215,false,10,31,61,Rp350957000,AnteIpsumPrimis.tiff
+S000037,SK007,Stand-alone Outdoors,true,875,true,16,38,62,Rp294731000,PrimisInFaucibus.jpeg
+S000038,SK017,asymmetric Baby,false,424,false,5,46,88,Rp215999000,Ultrices.png
+S000039,SK061,asynchronous Industrial,false,203,false,17,23,60,Rp291254000,MiInPorttitor.jpeg
+S000040,SK077,Secured Baby,false,149,true,7,37,83,Rp368666000,SapienALibero.tiff
+S000041,SK075,explicit Clothing,true,89,true,5,27,73,Rp935733000,Aliquam.jpeg
+S000042,SK028,bottom-line Games,false,685,true,12,47,93,Rp142249000,CondimentumCurabiturIn.gif
+S000043,SK053,bandwidth-monitored Industrial,true,903,false,7,39,67,Rp205194000,PhasellusIdSapien.jpeg
+S000044,SK036,national Outdoors,true,348,false,5,45,90,Rp561436000,AFeugiat.jpeg
+S000045,SK077,Re-contextualized Automotive,true,90,false,20,49,87,Rp914369000,IntegerANibh.jpeg
+S000046,SK033,installation Computers,false,443,true,17,37,56,Rp570888000,LoremIpsum.gif
+S000047,SK040,reciprocal Health,true,827,false,5,42,68,Rp469550000,Imperdiet.tiff
+S000048,SK002,Persevering Outdoors,true,570,true,9,47,61,Rp345942000,NibhQuisque.jpeg
+S000049,SK035,Quality-focused Music,true,315,false,4,24,99,Rp648062000,VelNislDuis.gif
+S000050,SK053,flexibility Toys,true,982,true,8,50,99,Rp579301000,DapibusDuisAt.tiff
+S000051,SK056,algorithm Garden,false,355,true,10,38,80,Rp423167000,DuisBibendumMorbi.jpeg
+S000052,SK005,system engine Computers,true,905,false,17,28,61,Rp464084000,UllamcorperPurus.jpeg
+S000053,SK044,instruction set Beauty,false,149,false,17,47,88,Rp399708000,AliquamQuisTurpis.tiff
+S000054,SK017,analyzing Computers,false,176,false,7,31,59,Rp790771000,UtDolorMorbi.tiff
+S000055,SK024,Customer-focused Kids,false,273,false,18,35,50,Rp749496000,VenenatisTristiqueFusce.jpeg
+S000056,SK012,groupware Books,true,670,false,4,20,53,Rp268173000,Maecenas.tiff
+S000057,SK067,complexity Tools,true,300,false,3,44,76,Rp894827000,FermentumJusto.tiff
+S000058,SK053,approach Tools,false,999,true,6,29,88,Rp152347000,BibendumFelis.jpeg
+S000059,SK006,customer loyalty Movies,true,907,false,6,42,87,Rp531154000,NullamSit.gif
+S000060,SK021,radical Movies,true,76,false,17,37,55,Rp482416000,Sapien.jpeg
+S000061,SK051,standardization Automotive,true,537,true,8,32,52,Rp145897000,MagnaVulputate.tiff
+S000062,SK050,approach Tools,true,610,false,15,47,84,Rp134582000,Diam.jpeg
+S000063,SK062,client-driven Garden,true,169,true,3,50,78,Rp976483000,Porta.tiff
+S000064,SK051,analyzing Computers,false,141,true,12,30,96,Rp243131000,DapibusDolor.gif
+S000065,SK010,Implemented Grocery,false,575,true,4,26,99,Rp657733000,AtLorem.png
+S000066,SK021,Re-engineered Jewelery,false,187,true,17,24,58,Rp752171000,AccumsanOdioCurabitur.jpeg
+S000067,SK022,emulation Sports,false,13,true,20,39,86,Rp96473000,EgestasMetusAenean.jpeg
+S000068,SK002,bottom-line Games,true,977,true,14,39,52,Rp229620000,OdioCrasMi.jpeg
+S000069,SK065,asynchronous Industrial,false,504,true,14,31,94,Rp197534000,In.jpeg
+S000070,SK002,algorithm Music,false,12,true,8,22,77,Rp446297000,LuctusEtUltrices.gif
+S000071,SK068,emulation Electronics,false,310,false,9,45,82,Rp415157000,UtMassa.tiff
+S000072,SK060,solution-oriented Baby,true,142,true,12,27,79,Rp159123000,DolorVelEst.tiff
+S000073,SK021,Secured Baby,true,278,true,2,27,86,Rp329353000,Primis.tiff
+S000074,SK018,Future-proofed Baby,false,670,true,13,29,91,Rp366177000,FaucibusOrci.tiff
+S000075,SK002,eco-centric Industrial,false,402,false,9,30,51,Rp822267000,MassaVolutpat.jpeg
+S000076,SK055,analyzer Computers,true,725,false,4,26,93,Rp448361000,Sem.tiff
+S000077,SK014,capacity Electronics,false,256,true,1,26,94,Rp179465000,Purus.png
+S000078,SK050,software Books,true,218,true,18,35,65,Rp245691000,CommodoPlacerat.tiff
+S000079,SK018,project Computers,false,374,false,1,44,87,Rp123344000,CongueEtiam.gif
+S000080,SK004,Ameliorated Movies,true,994,false,7,20,80,Rp232693000,SemMauris.jpeg
+S000081,SK066,task-force Garden,false,980,false,16,25,65,Rp504077000,PellentesqueQuisquePorta.gif
+S000082,SK046,radical Movies,true,437,true,19,46,78,Rp214122000,DolorMorbiVel.jpeg
+S000083,SK057,reciprocal Health,true,71,true,14,32,58,Rp131615000,ImperdietNullam.tiff
+S000084,SK074,empowering Books,true,54,true,18,25,83,Rp691946000,Hac.tiff
+S000085,SK002,approach Tools,true,101,false,13,47,66,Rp134893000,AcConsequatMetus.tiff
+S000086,SK077,eco-centric Industrial,true,279,false,7,37,65,Rp384000,TempusVivamusIn.jpeg
+S000087,SK036,alliance Toys,true,919,false,11,26,74,Rp573039000,NatoquePenatibus.gif
+S000088,SK008,Business-focused Jewelery,false,121,true,3,37,79,Rp801586000,VestibulumAc.png
+S000089,SK053,empowering Electronics,true,568,false,4,45,58,Rp689464000,ParturientMontes.tiff
+S000090,SK022,non-volatile Games,false,5,false,14,42,66,Rp749907000,InAnte.jpeg
+S000091,SK060,task-force Movies,false,623,false,18,24,60,Rp59803000,Convallis.gif
+S000092,SK031,frame Computers,true,748,true,9,39,80,Rp188237000,VestibulumAnte.gif
+S000093,SK003,analyzer Computers,true,865,true,16,24,65,Rp280572000,UltricesPhasellusId.jpeg
+S000094,SK051,Persevering Outdoors,false,986,false,7,22,54,Rp257530000,TemporConvallisNulla.jpeg
+S000095,SK036,time-frame Health,true,597,false,19,25,65,Rp93133000,SagittisNam.gif
+S000096,SK036,analyzing Computers,false,858,true,10,32,75,Rp308228000,At.jpeg
+S000097,SK078,bottom-line Games,true,850,false,19,43,72,Rp364443000,RutrumNequeAenean.gif
+S000098,SK040,analyzing Computers,true,243,false,11,30,63,Rp733274000,PlateaDictumstAliquam.tiff
+S000099,SK009,approach Tools,false,158,false,15,39,75,Rp897403000,Nisi.tiff
+S0000100,SK015,Compatible Outdoors,true,408,false,7,34,77,Rp159548000,Eu.jpeg
+S0000101,SK020,analyzing Computers,true,666,true,7,48,78,Rp601275000,PellentesqueQuisquePorta.jpeg
+S0000102,SK001,Customer-focused Kids,true,613,true,4,28,69,Rp373183000,VenenatisNonSodales.png
+S0000103,SK059,real-time Automotive,false,21,false,13,30,64,Rp275357000,DonecDiamNeque.jpeg
+S0000104,SK068,task-force Movies,false,731,false,12,23,94,Rp175468000,Eu.jpeg
+S0000105,SK035,Stand-alone Music,true,87,true,15,36,51,Rp339622000,Parturient.jpeg
+S0000106,SK038,algorithm Music,false,698,true,12,38,71,Rp146228000,LigulaSuspendisseOrnare.gif
+S0000107,SK056,analyzing Computers,false,3,false,19,38,66,Rp161772000,Ligula.png
+S0000108,SK068,Cross-group Health,false,242,false,15,40,60,Rp612684000,In.jpeg
+S0000109,SK033,Re-contextualized Automotive,false,953,false,5,45,72,Rp787550000,A.jpeg
+S0000110,SK048,functionalities Toys,false,838,false,9,35,58,Rp758088000,NatoquePenatibusEt.gif
+S0000111,SK047,national Garden,true,160,true,8,39,52,Rp20935000,Nunc.tiff
+S0000112,SK060,Diverse Movies,false,859,true,9,33,86,Rp967256000,VolutpatEleifend.jpeg
+S0000113,SK026,tertiary Home,false,329,false,14,21,71,Rp328821000,ImperdietNullam.jpeg
+S0000114,SK004,holistic Shoes,false,131,true,7,21,59,Rp572752000,UltricesPosuere.tiff
+S0000115,SK061,solution-oriented Baby,false,934,true,13,50,95,Rp395317000,Libero.tiff
+S0000116,SK024,Advanced Baby,true,764,true,4,43,69,Rp789027000,MagnisDisParturient.jpeg
+S0000117,SK077,standardization Automotive,false,413,true,1,42,66,Rp666279000,Aliquet.tiff
+S0000118,SK047,bandwidth-monitored Industrial,true,714,false,20,27,67,Rp534873000,Lobortis.jpeg
+S0000119,SK013,customer loyalty Movies,false,289,true,15,33,72,Rp130127000,MorbiVelLectus.jpeg
+S0000120,SK002,software Books,true,401,true,5,43,91,Rp315359000,SodalesScelerisqueMauris.tiff
+S0000121,SK076,Multi-tiered Health,false,698,false,9,47,50,Rp989302000,IdMassa.jpeg
+S0000122,SK047,grid-enabled Music,false,742,true,9,32,80,Rp224874000,OdioElementum.jpeg
+S0000123,SK043,analyzing Computers,false,866,true,19,22,60,Rp235904000,Ac.jpeg
+S0000124,SK043,conglomeration Jewelery,true,708,false,5,21,91,Rp759519000,Cubilia.tiff
+S0000125,SK066,Customizable Shoes,true,773,false,11,33,70,Rp23138000,Morbi.tiff
+S0000126,SK028,instruction set Beauty,false,78,false,5,48,81,Rp979537000,PharetraMagna.jpeg
+S0000127,SK076,algorithm Music,false,471,false,19,30,78,Rp69609000,OdioIn.tiff
+S0000128,SK005,Stand-alone Outdoors,false,785,true,19,47,60,Rp972741000,JustoSit.tiff
+S0000129,SK001,Multi-tiered Health,false,695,true,14,41,53,Rp502026000,Eget.gif
+S0000130,SK020,algorithm Garden,false,980,false,14,24,89,Rp935587000,Pulvinar.tiff
+S0000131,SK041,standardization Automotive,false,617,false,4,35,63,Rp96428000,AtTurpis.jpeg
+S0000132,SK015,Centralized Home,false,91,false,2,42,54,Rp846491000,IpsumPraesentBlandit.jpeg
+S0000133,SK060,standardization Automotive,true,346,false,14,30,55,Rp254865000,Orci.jpeg
+S0000134,SK007,installation Computers,false,775,true,10,38,54,Rp728917000,Nibh.tiff
+S0000135,SK032,capacity Electronics,false,562,true,10,34,75,Rp48149000,Lectus.tiff
+S0000136,SK062,asymmetric Baby,false,959,false,14,41,56,Rp527420000,MalesuadaIn.gif
+S0000137,SK010,actuating Outdoors,false,169,true,15,33,73,Rp81550000,SedJusto.jpeg
+S0000138,SK002,approach Tools,true,551,true,4,26,90,Rp330653000,PlateaDictumstMaecenas.jpeg
+S0000139,SK077,Ameliorated Movies,true,30,true,9,29,73,Rp945392000,Morbi.png
+S0000140,SK056,grid-enabled Music,true,776,true,11,36,62,Rp8292000,NecNisi.tiff
+S0000141,SK079,task-force Movies,true,980,true,11,26,79,Rp357723000,Donec.tiff
+S0000142,SK059,reciprocal Health,false,665,false,18,25,89,Rp25579000,Tortor.png
+S0000143,SK043,Realigned Books,false,915,false,3,39,96,Rp713468000,Id.png
+S0000144,SK063,Future-proofed Toys,true,89,true,8,38,92,Rp892458000,NonMattis.tiff
+S0000145,SK042,national Garden,false,546,false,1,48,85,Rp141843000,A.gif
+S0000146,SK071,Quality-focused Music,true,281,true,15,21,71,Rp377086000,TurpisSed.jpeg
+S0000147,SK002,analyzer Computers,false,262,true,14,36,52,Rp405604000,DolorQuisOdio.jpeg
+S0000148,SK023,reciprocal Health,false,584,false,8,45,60,Rp666727000,LiberoNullam.gif
+S0000149,SK031,Realigned Books,true,580,false,13,49,66,Rp162682000,VelPedeMorbi.gif
+S0000150,SK014,empowering Electronics,true,694,false,19,35,91,Rp305223000,Metus.png
+S0000151,SK021,methodical Automotive,false,981,false,15,50,74,Rp136808000,In.tiff
+S0000152,SK037,asynchronous Industrial,true,649,false,5,49,52,Rp105100000,CubiliaCurae.png
+S0000153,SK014,analyzing Computers,false,308,false,16,39,86,Rp787049000,DapibusNulla.tiff
+S0000154,SK031,bottom-line Games,true,793,true,18,23,61,Rp653516000,NonSodalesSed.gif
+S0000155,SK075,functionalities Toys,false,518,true,19,22,67,Rp827232000,Elementum.tiff
+S0000156,SK064,uniform Shoes,false,832,false,17,23,71,Rp629717000,Nullam.gif
+S0000157,SK022,installation Computers,true,299,false,1,25,74,Rp54007000,ALiberoNam.png
+S0000158,SK037,complexity Tools,false,865,true,10,30,56,Rp383639000,ConvallisDuisConsequat.png
+S0000159,SK067,conglomeration Jewelery,false,351,true,11,22,58,Rp223948000,LeoOdioCondimentum.png
+S0000160,SK053,instruction set Beauty,false,363,true,18,28,93,Rp471714000,PraesentBlanditNam.tiff
+S0000161,SK001,functionality Home,true,419,true,19,45,64,Rp762542000,Lorem.tiff
+S0000162,SK064,standardization Automotive,true,848,true,2,26,89,Rp96119000,AugueVestibulumRutrum.jpeg
+S0000163,SK046,Re-engineered Jewelery,true,139,false,17,25,81,Rp426221000,Lacinia.png
+S0000164,SK023,mission-critical Baby,false,753,true,7,26,86,Rp716161000,Et.gif
+S0000165,SK038,alliance Toys,false,440,true,13,36,72,Rp777779000,Adipiscing.gif
+S0000166,SK058,asynchronous Industrial,false,22,false,12,21,65,Rp80007000,Feugiat.png
+S0000167,SK014,asymmetric Baby,false,671,false,6,47,55,Rp626345000,JustoEu.png
+S0000168,SK034,explicit Clothing,true,939,false,8,24,65,Rp332953000,JustoNec.png
+S0000169,SK078,project Tools,false,458,false,16,47,81,Rp409180000,AmetEratNulla.tiff
+S0000170,SK006,flexibility Toys,false,745,true,13,34,57,Rp394717000,Curae.jpeg
+S0000171,SK001,software Books,true,603,true,20,22,75,Rp495523000,QuisLibero.jpeg
+S0000172,SK045,methodical Automotive,true,785,false,3,35,63,Rp728766000,QuisqueUt.gif
+S0000173,SK007,Quality-focused Music,false,256,true,13,33,55,Rp901277000,VolutpatQuam.jpeg
+S0000174,SK014,real-time Automotive,true,525,false,5,29,57,Rp791025000,VelEstDonec.gif
+S0000175,SK022,groupware Books,false,604,false,11,43,65,Rp169499000,AmetEros.tiff
+S0000176,SK018,Graphical User Interface Music,true,897,false,7,27,84,Rp69985000,InterdumInAnte.jpeg
+S0000177,SK066,analyzer Computers,true,440,true,17,41,72,Rp362464000,ProinEu.tiff
+S0000178,SK023,holistic Grocery,false,97,false,18,36,77,Rp243151000,InEleifendQuam.jpeg
+S0000179,SK014,bandwidth-monitored Industrial,false,408,true,2,43,74,Rp341284000,QuamSuspendissePotenti.gif
+S0000180,SK029,reciprocal Health,true,471,false,18,37,77,Rp444781000,Augue.gif
+S0000181,SK067,actuating Outdoors,false,236,true,12,46,98,Rp957656000,SapienUrnaPretium.png
+S0000182,SK058,bottom-line Games,false,676,false,13,25,51,Rp371664000,Velit.jpeg
+S0000183,SK067,service-desk Tools,true,419,true,12,38,73,Rp273495000,PenatibusEt.jpeg
+S0000184,SK022,Cross-group Health,true,984,false,15,21,97,Rp719291000,Nisl.tiff
+S0000185,SK079,Organic Electronics,true,926,true,17,42,63,Rp65476000,ElitProin.tiff
+S0000186,SK047,national Outdoors,true,97,false,4,25,76,Rp349150000,IdSapien.jpeg
+S0000187,SK070,emulation Electronics,true,528,true,17,22,73,Rp72471000,AtNunc.png
+S0000188,SK012,emulation Sports,true,61,true,1,26,61,Rp129270000,AnteVestibulum.gif
+S0000189,SK012,complexity Tools,false,590,true,1,21,77,Rp323818000,Justo.tiff
+S0000190,SK013,approach Kids,false,422,false,20,34,51,Rp11747000,SapienSapienNon.gif
+S0000191,SK032,empowering Beauty,true,555,true,11,49,56,Rp334473000,IntegerAliquetMassa.png
+S0000192,SK068,standardization Automotive,false,536,true,16,20,79,Rp697322000,EtiamJusto.tiff
+S0000193,SK065,analyzing Computers,false,716,true,11,38,78,Rp179913000,CondimentumNequeSapien.tiff
+S0000194,SK011,time-frame Health,false,668,false,13,37,94,Rp467491000,Aliquet.tiff
+S0000195,SK054,customer loyalty Movies,false,937,false,15,36,59,Rp216840000,Nulla.jpeg
+S0000196,SK037,system engine Computers,false,496,true,15,31,76,Rp621793000,Convallis.gif
+S0000197,SK063,Persevering Outdoors,false,723,true,5,35,68,Rp695390000,Est.jpeg
+S0000198,SK014,grid-enabled Music,false,89,true,15,28,69,Rp105791000,LigulaInLacus.tiff
+S0000199,SK020,Multi-tiered Health,false,402,false,13,47,82,Rp976939000,MaurisNon.png
+S0000200,SK077,Re-engineered Jewelery,true,67,true,16,29,95,Rp843518000,VulputateElementumNullam.tiff
+S0000201,SK059,non-volatile Games,true,691,false,20,22,66,Rp219036000,Suscipit.gif
+S0000202,SK080,Multi-tiered Health,true,399,false,17,27,75,Rp983482000,QuisqueIdJusto.png
+S0000203,SK022,customer loyalty Movies,true,833,false,12,34,68,Rp476559000,PedeUllamcorperAugue.tiff
+S0000204,SK072,actuating Outdoors,false,771,true,5,39,84,Rp722696000,VolutpatEleifendDonec.jpeg
+S0000205,SK073,Implemented Games,false,215,true,2,28,84,Rp650938000,EuInterdum.jpeg
+S0000206,SK080,circuit Automotive,false,413,true,16,38,97,Rp895707000,FusceConsequatNulla.tiff
+S0000207,SK080,Realigned Books,false,196,true,19,34,70,Rp97103000,NonummyMaecenas.tiff
+S0000208,SK009,Advanced Baby,true,148,false,15,32,83,Rp475172000,A.jpeg
+S0000209,SK022,analyzer Computer,false,957,true,2,43,70,Rp700872000,Integer.tiff
+S0000210,SK060,asymmetric Baby,true,654,true,20,33,99,Rp758564000,UltricesPosuereCubilia.png
+S0000211,SK075,functionalities Toys,false,993,true,12,32,100,Rp351937000,EnimLeo.png
+S0000212,SK026,instruction set Beauty,true,669,true,7,39,98,Rp618901000,TortorRisus.png
+S0000213,SK054,project Computers,false,71,true,1,20,87,Rp215755000,Dolor.gif
+S0000214,SK073,system engine Computers,true,408,false,4,28,56,Rp442273000,Pellentesque.jpeg
+S0000215,SK016,empowering Books,true,434,false,1,33,80,Rp598723000,LeoOdioPorttitor.tiff
+S0000216,SK055,eco-centric Industrial,false,279,false,16,30,68,Rp312177000,Malesuada.tiff
+S0000217,SK064,algorithm Industrial,false,747,false,6,28,60,Rp814710000,VestibulumVestibulumAnte.tiff
+S0000218,SK071,system engine Computers,false,877,true,8,22,56,Rp432964000,VestibulumAnteIpsum.gif
+S0000219,SK071,Diverse Movies,true,247,false,2,48,73,Rp102996000,Dapibus.tiff
+S0000220,SK027,Robust Garden,false,926,false,10,33,69,Rp822957000,AcNulla.png
+S0000221,SK017,asynchronous Industrial,false,966,true,9,36,82,Rp550106000,MorbiVelLectus.tiff
+S0000222,SK031,functionalities Toys,true,91,false,14,46,60,Rp200873000,Sapien.tiff
+S0000223,SK002,software Music,false,189,false,3,36,90,Rp280831000,InterdumMaurisUllamcorper.tiff
+S0000224,SK022,projection Jewelery,true,33,true,12,40,94,Rp782949000,Ornare.tiff
+S0000225,SK079,instruction set Beauty,true,631,false,19,25,55,Rp445133000,CubiliaCuraeMauris.jpeg
+S0000226,SK016,task-force Garden,true,269,true,5,31,88,Rp263426000,TortorId.jpeg
+S0000227,SK037,project Computers,true,782,false,4,44,92,Rp390258000,VolutpatConvallisMorbi.tiff
+S0000228,SK008,standardization Automotive,false,989,false,17,41,71,Rp417835000,Morbi.tiff
+S0000229,SK045,Re-engineered Jewelery,false,772,true,17,31,70,Rp918581000,Nullam.jpeg
+S0000230,SK028,project Computers,false,752,false,10,20,95,Rp361187000,Turpis.png
+S0000231,SK039,Secured Baby,true,668,true,12,46,62,Rp630464000,PraesentId.png
+S0000232,SK008,task-force Movies,false,97,false,12,25,70,Rp903275000,InCongueEtiam.tiff
+S0000233,SK025,Diverse Movies,true,621,false,17,24,56,Rp227260000,SapienUtNunc.jpeg
+S0000234,SK044,client-driven Garden,false,924,true,5,32,80,Rp36991000,PotentiCrasIn.tiff
+S0000235,SK048,projection Jewelery,true,127,false,14,43,68,Rp472664000,SapienPlaceratAnte.jpeg
+S0000236,SK034,Face to face Electronics,true,428,false,6,25,72,Rp423940000,SapienIn.jpeg
+S0000237,SK041,Implemented Games,true,213,false,7,24,63,Rp347715000,LaciniaEgetTincidunt.gif
+S0000238,SK001,monitoring Books,true,372,false,16,25,94,Rp911190000,In.tiff
+S0000239,SK050,functionalities Home,false,469,false,16,35,91,Rp600746000,Eu.tiff
+S0000240,SK034,circuit Automotive,true,533,true,18,42,84,Rp253928000,OdioElementumEu.tiff
+S0000241,SK070,capacity Electronics,true,857,false,3,33,94,Rp499364000,SedLacus.png
+S0000242,SK039,Diverse Movies,false,429,true,1,33,68,Rp126709000,SitAmet.png
+S0000243,SK012,Re-contextualized Automotive,true,624,false,7,28,65,Rp590009000,VestibulumQuam.jpeg
+S0000244,SK051,solution-oriented Electronics,false,5,false,3,40,52,Rp451749000,Cum.tiff
+S0000245,SK008,software Garden,false,729,false,20,38,66,Rp872700000,Proin.gif
+S0000246,SK012,holistic Grocery,true,373,true,20,48,93,Rp117791000,Luctus.tiff
+S0000247,SK079,bandwidth-monitored Industrial,false,359,false,7,50,70,Rp471643000,AcNeque.png
+S0000248,SK018,algorithm Garden,true,226,false,19,47,73,Rp630771000,AtDolorQuis.gif
+S0000249,SK016,monitoring Books,false,123,false,17,44,55,Rp450387000,VelNulla.gif
+S0000250,SK061,analyzing Computers,false,443,true,5,42,96,Rp831404000,MaurisLaoreetUt.gif
