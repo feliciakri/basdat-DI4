@@ -348,4 +348,3 @@ INSERT INTO PELANGGAN(email,is_penjual,nilai_reputasi,poin) VALUES ('cmiddler2g@
 INSERT INTO PELANGGAN(email,is_penjual,nilai_reputasi,poin) VALUES ('bdionis12@scribd.com',TRUE,1.6,NULL);
 INSERT INTO PELANGGAN(email,is_penjual,nilai_reputasi,poin) VALUES ('tselbyn@hhs.gov',TRUE,4.1,NULL);
 INSERT INTO PELANGGAN(email,is_penjual,nilai_reputasi,poin) VALUES ('jeakley2k@yolasite.com',TRUE,0.3,NULL);
-INSERT INTO PELANGGAN(email,is_penjual,nilai_reputasi,poin) VALUES ('',NULL,NULL,NULL);
