@@ -1,0 +1,52 @@
+CREATE OR REPLACE FUNCTION upd_stok()
+RETURNS TRIGGER AS
+$$
+DECLARE
+	var1 CHAR(8);
+BEGIN
+IF(TG_OP = 'INSERT') THEN
+	SELECT kode_produk into var1
+	FROM SHIPPED_PRODUK
+	WHERE kode_produk = NEW.kode_produk
+	IF(NEW.kode_produk = var1)
+		UPDATE SHIPPED_PRODUK
+		SET stok += NEW.stok
+		WHERE kode_produk = NEW.kode_produk
+	END IF;
+	RETURN NEW;
+END IF;
+
+IF(TG_OP = 'UPDATE') THEN
+	IF(NEW.kode_produk != NULL) THEN
+		UPDATE SHIPPED_PRODUK SP SET stok = stok + NEW.kuantitas
+		WHERE SP.kode_produk = OLD.kode_produk;
+
+		UPDATE SHIPPED_PRODUK SP SET stok = stok - NEW.kuantitas
+		WHERE SP.kode_produk = NEW.kode_produk;
+	END IF;
+	IF(NEW.kuantitas != NULL) THEN
+		IF(NEW.kuantitas < OLD.kuantitas) THEN
+			UPDATE SHIPPED_PRODUK SP SET stok = stok + (OLD.kuantitas - NEW.kuantitas)
+			WHERE SP.kode_produk = OLD.kode_produk;
+		END IF;
+		IF(NEW.kuantitas > OLD.kuantitas) THEN
+			UPDATE SHIPPED_PRODUK SP SET stok = stok - (NEW.kuantitas - OLD.kuantitas)
+			WHERE SP.kode_produk = OLD.kode_produk;
+		END IF;
+	END IF;
+	RETURN NEW;
+END IF;
+
+IF(TG_OP = 'DELETE') THEN
+	UPDATE SHIPPED_PRODUK SP SET stok = stok + OLD.kuantitas
+	WHERE SP.kode_produk = OLD.kode_produk;
+END IF;
+	RETURN OLD;
+END;
+$$
+LANGUAGE plpgsql;
+
+CREATE TRIGGER upd_stok_trigger()
+AFTER INSERT, UPDATE, DELETE
+ON SHIPPED_PRODUK
+EXECUTE PROCEDURE upd_stok();
