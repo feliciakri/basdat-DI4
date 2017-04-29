@@ -9,14 +9,8 @@ IF(TG_OP = 'INSERT') THEN
 END IF;
 
 IF(TG_OP = 'UPDATE') THEN
-	IF(NEW.kode_produk != NULL) THEN
-		UPDATE SHIPPED_PRODUK SP SET stok = stok + NEW.kuantitas
-		WHERE SP.kode_produk = OLD.kode_produk;
-
-		UPDATE SHIPPED_PRODUK SP SET stok = stok - NEW.kuantitas
-		WHERE SP.kode_produk = NEW.kode_produk;
-	END IF;
-	IF(NEW.kuantitas != NULL) THEN
+	
+	IF(NEW.kuantitas & NEW.kode_produk != NULL) THEN
 		IF(NEW.kuantitas < OLD.kuantitas) THEN
 			UPDATE SHIPPED_PRODUK SP SET stok = stok + (OLD.kuantitas - NEW.kuantitas)
 			WHERE SP.kode_produk = OLD.kode_produk;
