@@ -304,7 +304,7 @@ INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VA
 INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V0000156','S0000207',9,8,843223,7120000);
 INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V00004','S0000168',6,6,934926,3756000);
 INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V0000201','S0000248',4,10,93555,3270000);
-INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V0000110','S00004',6,8,470694,4462000);
+INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V0000110','S000042',6,8,470694,4462000);
 INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V0000171','S0000222',6,6,593023,504000);
 INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V000083','S0000248',1,10,93555,8546000);
 INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V0000369','S000090',2,1,981861,1259000);
@@ -314,7 +314,7 @@ INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VA
 INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V00003','S0000144',6,8,90059,1123000);
 INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V0000345','S000045',8,9,447138,532000);
 INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V000078','S0000177',1,10,781962,920000);
-INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V0000245','S000036',9,4,271392,4462000);
+INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V0000245','S000020',9,4,271392,4462000);
 INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V0000315','S00008',9,5,779781,5440000);
 INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V0000230','S0000181',3,1,734851,2808000);
 INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V0000143','S0000182',10,10,256560,5554000);
@@ -374,7 +374,7 @@ INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VA
 INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V0000319','S0000244',6,3,635633,1551000);
 INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V000046','S00006',6,1,807568,6498000);
 INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V0000159','S0000217',6,9,193002,5693000);
-INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V0000235','S0000179',4,3,313830,8564000);
+INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V0000235','S0000120',4,3,313830,8564000);
 INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V0000148','S000038',2,10,172468,3323000);
 INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V0000485','S0000226',6,9,114249,8197000);
 INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V0000266','S0000194',10,9,873946,8036000);
@@ -489,7 +489,7 @@ INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VA
 INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V0000205','S000025',1,6,317629,1613000);
 INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V000017','S0000244',5,6,635633,8165000);
 INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V0000354','S000083',3,5,635220,7383000);
-INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V0000405','S0000241',4,6,782966,2629000);
+INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V0000405','S0000242',4,6,782966,2629000);
 INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V0000276','S0000219',9,2,740107,9844000);
 INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V0000210','S0000242',4,5,474150,5084000);
 INSERT INTO LIST_ITEM(no_invoice,kode_produk,berat,kuantitas,harga,sub_total) VALUES ('V0000340','S0000208',8,9,478724,5019000);

@@ -15,7 +15,7 @@ insert into KERANJANG_BELANJA (pembeli, kode_produk, berat, kuantitas, harga, su
 insert into KERANJANG_BELANJA (pembeli, kode_produk, berat, kuantitas, harga, sub_total) values ('umordacai5g@last.fm', 'S0000172', 51, 13, 863981, 11231753);
 insert into KERANJANG_BELANJA (pembeli, kode_produk, berat, kuantitas, harga, sub_total) values ('kde3g@ebay.co.uk', 'S0000247', 96, 27, 527345, 14238315);
 insert into KERANJANG_BELANJA (pembeli, kode_produk, berat, kuantitas, harga, sub_total) values ('gzapata4o@slideshare.net', 'S00004', 100, 40, 791828, 31673120);
-insert into KERANJANG_BELANJA (pembeli, kode_produk, berat, kuantitas, harga, sub_total) values ('mdraysay5z@weibo.com', 'S000062', 80, 49, 273085, 13381165);
+insert into KERANJANG_BELANJA (pembeli, kode_produk, berat, kuantitas, harga, sub_total) values ('mdraysay5z@weibo.com', 'S000063', 80, 49, 273085, 13381165);
 insert into KERANJANG_BELANJA (pembeli, kode_produk, berat, kuantitas, harga, sub_total) values ('adortonl@nytimes.com', 'S0000111', 74, 34, 951890, 32364260);
 insert into KERANJANG_BELANJA (pembeli, kode_produk, berat, kuantitas, harga, sub_total) values ('ldoore32@loc.gov', 'S000093', 32, 50, 729715, 36485750);
 insert into KERANJANG_BELANJA (pembeli, kode_produk, berat, kuantitas, harga, sub_total) values ('yseago4v@geocities.com', 'S000058', 98, 27, 317767, 8579709);
