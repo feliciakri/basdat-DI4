@@ -4,7 +4,7 @@
       try {
           $dbuser = 'd04';
           $dbpass = 'd04';
-          $dbhost = '127.0.0.1';
+          $dbhost = 'localhost';
           $dbname='d04';
 
           $conn = pg_connect("host=$dbhost dbname=$dbname user=$dbuser password=$dbpass");
@@ -15,4 +15,3 @@
           die();
       }
     }
-?>
