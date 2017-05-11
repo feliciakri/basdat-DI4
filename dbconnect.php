@@ -1,18 +1,17 @@
 <?php
-    /*function connectDB()
+    function connectDB()
     {
-        $servername = "localhost";
-        $username   = "root";
-        $password   = "";
-        $dbname     = "tokokeren";
+      try {
+          $dbuser = 'd04';
+          $dbpass = 'd04';
+          $host = 'localhost';
+          $dbname='d04';
 
-        // Create connection
-        $conn = mysqli_connect($servername, $username, $password, $dbname);
-
-        // Check connection
-        if (!$conn) {
-            die("Connection failed: " + mysqli_connect_error());
-        }
-        return $conn;*/
+          $conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
+          return $conn;
+      }catch (PDOException $e) {
+          echo "Error : " . $e->getMessage() . "<br/>";
+          die();
+      }
     }
 ?>
