@@ -1,3 +1,26 @@
+<?php
+    include "dbconnect.php";
+    $conn = connectDB();
+
+    $sql = "SET search_path TO tokokeren";
+    $result = pg_query($conn, $sql);
+    
+    parse_str(file_get_contents("php://input"), $_POST);
+    if(isset($_POST)) {
+        if(isset($_POST['command'])) {
+            if($_POST['command'] == 'ulasProduk') {
+                $email = pg_escape_string($_SESSION['user']);
+                $kodeProduk =  pg_escape_string($_GET['kode_produk']);
+                $tanggal = date("Y/m/d");
+                $rating =  pg_escape_string($_POST['rating']);
+                $komentar =  pg_escape_string($_POST['komentar']);
+                $sql = "INSERT INTO ULASAN (email_pembeli, kode_produk, tanggal, rating, komentar) values ('$email','$kodeProduk', '$tanggal', '$rating', '$komentar')";
+                $result = pg_query($conn, $sql); 
+            }
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +57,7 @@
         <h2 class="text-center">Ulasan</h2>
         <div class="row">
 	        <div class="col-sm-12">
-	            <form id="formUlasan">
+	            <form id="formUlasan" action="ulasan.php" method="post">
 				    <div class="form-group">
 				        <label for="kodeProduk" class="control-label">Kode Produk</label>
 				        <p>Kode Produk</p>
@@ -46,6 +69,7 @@
 				    <div class="form-group">
 				        <label for="inputKomentar" class="control-label">Komentar</label>
                         <textarea id="inputKomentar" class="form-control" name="komentar" form="formUlasan" required></textarea>
+                        <input type="hidden" name="command" value="ulasProduk">
 				    </div>
 				    <button type="submit" class="btn btn-primary">Submit</button>
 				</form>
