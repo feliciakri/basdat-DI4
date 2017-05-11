@@ -5,8 +5,6 @@
     function register() {
         $conn = connectDB();
 
-        console.log("3333");
-
         $email = pg_escape_string($_POST['email']);
         $password = pg_escape_string($_POST['password']);
         $nama = pg_escape_string($_POST['nama']);
@@ -15,21 +13,21 @@
         $no_telp = pg_escape_string($_POST['no_telp']);
         $alamat = pg_escape_string($_POST['alamat']);
 
-        console.log("heyy");
-
-        $sql = "INSERT into pengguna(email, password, nama, jenis_kelamin, tgl_lahir, no_telp, alamat) values ('$email', '$password', '$nama', '$jenis_kelamin', '$tgl_lahir', '$no_telp', '$alamat')";
-        
-        if($result = pg_query($conn, $sql)) {
-            print "Data added.<br/>";
-            header("Location: registration.php");
-        } else {
-            die("Error: $sql");
+        $set = "SET search_path TO TOKOKEREN";
+        if($result = pg_query($conn, $set)) {
+            $sql = "INSERT into pengguna(email, password, nama, jenis_kelamin, tgl_lahir, no_telp, alamat) values ('$email', '$password', '$nama', '$jenis_kelamin', '$tgl_lahir', '$no_telp', '$alamat')";    
+            if($result = pg_query($conn, $sql)) {
+                print "Data added.<br/>";
+                header("Location: registration.php");
+            } else {
+                die("Error: $sql");
+            }
         }
 
         pg_close($conn);
     }
 
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset ($_REQUEST['command']) && $_SERVER['REQUEST_METHOD'] === 'POST') {
         if($_POST['command'] === 'register') {
             register();
         }
