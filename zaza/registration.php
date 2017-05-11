@@ -1,26 +1,40 @@
 <?php
     session_start();
-    include('connect.php');
+    include('dbconnect.php');
   
-    function register($email, $password, $nama, $jenis_kelamin, $tgl_lahir, $no_telp, $alamat) {
+    function register() {
         $conn = connectDB();
+
+        console.log("3333");
+
+        $email = pg_escape_string($_POST['email']);
+        $password = pg_escape_string($_POST['password']);
+        $nama = pg_escape_string($_POST['nama']);
+        $jenis_kelamin = pg_escape_string($_POST['jenis_kelamin']);
+        $tgl_lahir = pg_escape_string($_POST['tgl_lahir']);
+        $no_telp = pg_escape_string($_POST['no_telp']);
+        $alamat = pg_escape_string($_POST['alamat']);
+
+        console.log("heyy");
+
         $sql = "INSERT into pengguna(email, password, nama, jenis_kelamin, tgl_lahir, no_telp, alamat) values ('$email', '$password', '$nama', '$jenis_kelamin', '$tgl_lahir', '$no_telp', '$alamat')";
         
-        if($result = mysqli_query($conn, $sql)) {
+        if($result = pg_query($conn, $sql)) {
             print "Data added.<br/>";
-            header("Location: events.php");
+            header("Location: registration.php");
         } else {
             die("Error: $sql");
         }
-        mysqli_close($conn);
+
+        pg_close($conn);
     }
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        extract($_POST);
         if($_POST['command'] === 'register') {
-            register($_POST['email'], $_POST['password'], $_POST['nama'], $_POST['jenis_kelamin'], $_POST['tgl_lahir'], $_POST['no_telp'], $POST['alamat']);
+            register();
         }
     }
+
 ?>
 
 <!DOCTYPE html>
@@ -52,7 +66,7 @@
                     <h4 class="modal-title" id="daftarModalLabel">Form Pendaftaran Pengguna<h4>
                 </div>
             <div class="modal-body">
-                <form>
+                <form action="registration.php" method="POST">
                     <div class="form-group">
                         <label for="email">E-mail</label>
                         <input type="text" class="form-control" id="insert-email" name="email" placeholder="E-mail Anda">
@@ -72,8 +86,8 @@
                     <div class="form-group">
                         <label for="jenis_kelamin">Jenis Kelamin</label><br>
                         <select classs="form-control" id="insert-jenis-kelamin" name="jenis_kelamin">
-                            <option>Laki-laki</option>
-                            <option>Perempuan</option>
+                            <option value="L">Laki-laki</option>
+                            <option value="P">Perempuan</option>
                         </select>
                     </div>
                     <div class="form-group">
