@@ -1,7 +1,12 @@
 <?php
     session_start();
     include('dbconnect.php');
-  
+    
+    function debug($msg) {
+       $msg = str_replace('"', '\\"', $msg); // Escaping double quotes 
+        echo "<script>console.log(\"$msg\")</script>";
+    }
+
     function register() {
         $conn = connectDB();
 
@@ -31,12 +36,41 @@
             }
         }
 
+
         pg_close($conn);
+    }
+
+    function logging() {
+        $conn = connectDB();
+
+        $email = pg_escape_string($_POST['email']);
+        $password = pg_escape_string($_POST['password']);        
+        
+        $set = "SET search_path TO TOKOKEREN";
+        if($result = pg_query($conn, $set)) {
+            $checkEmail = "SELECT * FROM pengguna WHERE password = '$password' AND email = '$email'";
+            $checkResult = pg_query($checkEmail);
+            if(pg_num_rows($checkResult) > 0) {
+                $checkAdmin = "SELECT * FROM pelanggan WHERE email = '$email'";
+                if(pg_num_rows($checkAdmin) > 0) {
+                    $_SESSION['loggedrole'] == "pelanggan";
+                    $_SESSION['loggeduser'] == "email";
+                } else {
+                    $_SESSION['loggedrole'] == "admin";
+                    $_SESSION['loggeduser'] == "email";
+                }
+                header("Location: ../home.php");
+            } else {
+                echo '<script language="javascript">alert("Login error : email/password salah")</script>';
+            }
+        }
     }
 
     if (isset ($_REQUEST['command']) && $_SERVER['REQUEST_METHOD'] === 'POST') {
         if($_POST['command'] === 'register') {
             register();
+        } else if($_POST['command'] === 'logging') {
+            logging();
         }
     }
 
@@ -123,16 +157,16 @@
                     <h4 class="modal-title" id="loginModalLabel">Login</h4>
                 </div>
             <div class="modal-body">
-                <form>
+                <form action="registration.php" method="POST">
                     <div class="form-group">
                         <label for="email">E-mail</label>
-                        <input type="text" class="form-control" id="insert-email" name="email" placeholder="E-mail Anda">
+                        <input type="text" class="form-control" id="insert-email" name="email" placeholder="E-mail Anda" required>
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <input type="text" class="form-control" id="insert-password" name="password" placeholder="Password Anda">
+                        <input type="password" class="form-control" id="insert-password" name="password" placeholder="Password Anda" required>
                     </div>
-                        <input type="hidden" id="insert-command" name="command">
+                        <input type="hidden" id="insert-command" name="command" value="logging">
                         <button type="submit" class="btn btn-info">Login</button>
                 </form>
                 </div>
@@ -151,12 +185,9 @@
         }
     </script>
     <script type="text/javascript">
-        $(function(){
             $('[data-toggle="tooltip"]').tooltip();
-        });
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js.js"></script>
 </body>
 </html>
