@@ -69,37 +69,32 @@ function selectTransaksi(){
 							<li><a data-content="new" href="#0">Daftar Produk</a></li>
 						</ul> <!-- cd-tabs-navigation -->
 					</nav>
-"SELECT no_invoice, nama_toko, tanggal, waktu_bayar, alamat_kirim, biaya_kirim, no_resi, nama_jasa_kirim FROM transaksi_shipped WHERE email_pembeli=$loggeduid";
+
 					<ul class="cd-tabs-content">
 						<li data-content="inbox" class="selected">
 							<div class="container demo">
 								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-									<?php $q=selectTransaksi()?>
-									<?php while ($row = $q->fetch()): ?>
-										<div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="heading<?php echo htmlspecialchars($row['no_invoice'])?>">
-												<h4 class="panel-title">
-													<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheading<?php echo htmlspecialchars($row['no_invoice'])?>" aria-expanded="true" aria-controls="collapseheading<?php echo htmlspecialchars($row['no_invoice'])?>">
-														<i class="more-less glyphicon glyphicon-plus"></i>
-														heading<?php echo htmlspecialchars($row['no_invoice'])?><br>heading<?php echo htmlspecialchars($row['tanggal'])?><br>
-													</a>
-												</h4>
-											</div>
-											<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-												<div class="panel-body">
-													<b>Detail</b><br>
-																
-													<button>Ulas</button>
-												</div>
+
+									<?php
+
+									?>
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tab" id="headingOne">
+											<h4 class="panel-title">
+												<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+													<i class="more-less glyphicon glyphicon-plus"></i>
+													Nomor Produk #1<br>Tanggal Beli<br>
+												</a>
+											</h4>
+										</div>
+										<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+											<div class="panel-body">
+												<b>Detail</b><br>
+
+												<button>Ulas</button>
 											</div>
 										</div>
-                    <?php endwhile; ?>
-										<tr>
-												<td><?php echo htmlspecialchars($row['lastname']) ?></td>
-												<td><?php echo htmlspecialchars($row['firstname']); ?></td>
-												<td><?php echo htmlspecialchars($row['jobtitle']); ?></td>
-										</tr>
-
+									</div>
 
 									<div class="panel panel-default">
 										<div class="panel-heading" role="tab" id="headingTwo">
