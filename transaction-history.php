@@ -1,23 +1,10 @@
 <?php
 session_start();
-$_SESSION['loggeduser']="astandell6g@washington.edu";
+/*if (!isset($_SESSION['loggeduser'])) {
+	header('location: login');
+}*/
 
 include('dbconnect.php');
-debug("included");
-function selectTransaksi(){
-  try {
-    $conn = connectDB();
-    $loggeduid = $_SESSION['loggeduser'];
-    $sql = "SELECT no_invoice, nama_toko, tanggal, waktu_bayar, alamat_kirim, biaya_kirim, no_resi, nama_jasa_kirim FROM transaksi_shipped WHERE email_pembeli=$loggeduid";
-    $q = $conn->query($sql);
-    $q->setFetchMode(PDO::FETCH_ASSOC);
-		debug("inhere");
-    return $q;
-  } catch (PDOException $e){
-    die("Could not connect to the database $conn.$dbname :" . $e->getMessage());
-  }
-
-}
 ?>
 
 <!DOCTYPE html>
@@ -32,8 +19,6 @@ function selectTransaksi(){
 	<link type="text/css" rel="stylesheet" href="libs/materialize/css/materialize.min.css"  media="screen,projection"/>
 	<link rel="stylesheet" type="text/css" href="src/css/style.css">
 	<link rel="stylesheet" type="text/css" href="src/css/navbar.css">
-	<link rel="stylesheet" type="text/css" href="src/css/transaction-history.css">
-
 	<!-- insert more css file here -->
 
 </head>
@@ -124,6 +109,7 @@ function selectTransaksi(){
 
 						<li data-content="new">
 							<div class="container demo">
+
 
 								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
@@ -261,11 +247,10 @@ function selectTransaksi(){
 	</div>
 
 
-	<!--<script type="text/javascript" src="src/js/modernizr.js"></script>-->
+
 	<script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="src/js/jquery.menu-aim.js"></script> <!-- menu aim -->
 	<script type="text/javascript" src="src/js/script.js"></script>
-	<script type="text/javascript" src="src/js/transaction-history.js"></script>
 	<script type="text/javascript" src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="libs/materialize/js/materialize.min.js"></script>
 	<!-- insert more js file here -->

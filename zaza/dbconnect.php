@@ -2,10 +2,10 @@
     function connectDB()
     {
       try {
-          $dbuser = 'postgres';
-          $dbpass = 'd03';
+          $dbuser = 'd04';
+          $dbpass = 'd04';
           $dbhost = 'localhost';
-          $dbname='d03';
+          $dbname='d04';
 
           $conn = pg_connect("host=$dbhost dbname=$dbname user=$dbuser password=$dbpass");
           //$conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
@@ -15,3 +15,4 @@
           die();
       }
     }
+?>
