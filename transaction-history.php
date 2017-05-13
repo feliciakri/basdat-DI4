@@ -247,7 +247,7 @@ include('dbconnect.php');
 	</div>
 
 
-	<script type="text/javascript" src="src/js/modernizr.js"></script>
+
 	<script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="src/js/jquery.menu-aim.js"></script> <!-- menu aim -->
 	<script type="text/javascript" src="src/js/script.js"></script>
