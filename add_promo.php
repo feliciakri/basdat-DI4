@@ -1,3 +1,46 @@
+<?php
+    include "dbconnect.php";
+    $conn = connectDB();
+
+    $sql = "SET search_path TO tokokeren";
+    $result = pg_query($conn, $sql);
+    
+    parse_str(file_get_contents("php://input"), $_POST);
+    if(isset($_POST)) {
+        if(isset($_POST['command'])) {
+            if($_POST['command'] == 'addPromo') {
+                $id = getId();
+                $deskripsiPromo =  pg_escape_string($_POST['deskripsiPromo']);
+                $periodeAwal =  pg_escape_string($_POST['periodeAwal']);
+                $periodeAkhir =  pg_escape_string($_POST['periodeAkhir']);
+                $kodePromo =  pg_escape_string($_POST['kodePromo']);
+                $kategori =  pg_escape_string($_POST['kategori']);
+                $subKategori =  pg_escape_string($_POST['subKategori']);
+                $sql = "INSERT INTO JASA_KIRIM (deskripsiPromo, periodeAwal, periodeAkhir, kodePromo, kategori, subKategori) values ('$id', '$periodeAwal', '$periodeAkhir', '$kodePromo', '$kategori', '$subKategori')";
+                $result = pg_query($conn, $sql); 
+            }
+        }
+    }
+
+    function getId(){
+        $query = "SELECT * FROM PROMO";
+        $num_data = pg_num_rows(pg_query($query))+1;
+  
+  
+
+        if ($num_data > 9){
+        $new_id = "R000".$num_data."";
+        } else {
+        $new_id = "R0000".$num_data.""; 
+        }
+  
+        return $new_id;
+        }
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -63,6 +106,7 @@
                         <select class="form-control" id="inputSubKategori" name="subKategori" required>
                             <option>...</option>
                         </select>
+                        <input type="hidden" name="command" value="addPromo">
                     </div>
 				    <button type="submit" class="btn btn-primary">Submit</button>
 				</form>
