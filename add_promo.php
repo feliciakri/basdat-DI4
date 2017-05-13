@@ -116,5 +116,35 @@
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        showTransaksiPulsa();
+
+        //Show or hide jenis produk pulsa atau shipped_produk
+        $('input[type=radio][name=pilihanProduk]').change(function() {
+            if (this.value == 'pulsa') {
+                showTransaksiPulsa();
+            }
+            else if (this.value == 'barang') {
+                showTransaksiBarang();
+            }
+        });
+
+        //Pass kode_produk pulsa yang dipilih ke daftar produk dibeli
+        $(document).on("click", ".openFormDaftarProduk", function () {
+            var no_invoice = $(this).data('id');
+            var data = {"command": "daftar_produk", "invoice" : no_invoice};
+            $.post("services/transaksi.php", data, function(response) {
+                $('#listItem').html(response);
+            });
+
+            var id = '#' + no_invoice;
+            $(".modal-body #noInvoice").html(no_invoice);
+            $("#noInvoiceValue").val(no_invoice);
+            $(".produkDibeli").hide();
+            $(id).show();
+        });
+    });
+</script>
 </body>
 </html>                                		
