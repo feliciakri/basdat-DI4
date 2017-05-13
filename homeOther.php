@@ -13,13 +13,12 @@
 			<div class="container-fluid">
 				<ul class="nav navbar-nav">
 					<li><a href="index" class="brand-logo"><img src="src/img/logo-tokokeren-horizontal.png" height="32px"></a></li>
-					<li><a href="">Buat kategori</a></li>
-					<li><a href="">Buat Jasa Kirim</a></li>
-					<li><a href="">Buat Promo</a></li>
-					<li><a href="">Tambah Produk</a></li>
+					<li><a href="">Beli produk</a></li>
+					<li><a href="">Lihat transaksi</a></li>
+					<li><a href="">Lihat keranjang belanja</a></li>
+					<li><a href="">Buka toko</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="">Anda login sebagai admin | </a></li>
 					<li><a href="zaza/registration.php"><strong>Logout</strong></a></li>
 				</ul>
 			</div>

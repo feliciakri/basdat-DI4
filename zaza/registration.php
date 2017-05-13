@@ -28,8 +28,8 @@
             } else {
                 $sql = "INSERT into pengguna(email, password, nama, jenis_kelamin, tgl_lahir, no_telp, alamat) values ('$email', '$password', '$nama', '$jenis_kelamin', '$tgl_lahir', '$no_telp', '$alamat')";    
                 if($result = pg_query($conn, $sql)) {
-                    print "Data added.<br/>";
-                    header("Location: registration.php");
+                    echo '<script language="javascript">alert("Berhasil daftar. Masuk ke halaman utama...")</script>';
+                    //header("Location: ../homeOther.php");
                 } else {
                     die("Error: $sql");
                 }
@@ -55,11 +55,13 @@
                 if(pg_num_rows($checkAdmin) > 0) {
                     $_SESSION['loggedrole'] == "pelanggan";
                     $_SESSION['loggeduser'] == "email";
+                    header("Location:../homeOther.php");
                 } else {
                     $_SESSION['loggedrole'] == "admin";
                     $_SESSION['loggeduser'] == "email";
+                    header("Location:../home.php");
                 }
-                header("Location: ../home.php");
+                echo '<script language="javascript">alert("Berhasil login. Masuk ke halaman utama...")</script>';
             } else {
                 echo '<script language="javascript">alert("Login error : email/password salah")</script>';
             }
