@@ -83,7 +83,7 @@ function fetchListItems($noInvoice){
 				<td aria-label="Harga">Rp'.($myrow['harga']).'</td>
 				<td aria-label="Subtotal">Rp'.($myrow['sub_total']).'</td>
 				<td aria-label="Ulas"><button>Ulas</button></td>
-		</tr>'
+		</tr>';
 	}
 	return $res;
 
@@ -225,7 +225,7 @@ function fetchListItems($noInvoice){
 																	<th>Ulas</th>
 																</tr>
 															</thead>
-															<tbody></tbody>
+															<tbody>'.fetchListItems($myrow['no_invoice']).'</tbody>
 														</table>
 													</div>
 												</div>
