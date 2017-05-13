@@ -63,6 +63,32 @@ function fetchNamaProduk($kodeProduk){
 	return $myrow['nama'];
 }
 
+function fetchListItems($noInvoice){
+	$query = "SELECT * FROM tokokeren.list_item
+						WHERE no_invoice= '$noInvoice'";
+
+	$result = pg_query($query);
+	if (!$result) {
+			echo "Problem with query " . $query . "<br/>";
+			echo pg_last_error();
+			exit();
+	}
+
+	$res = "";
+	while($myrow = pg_fetch_assoc($result)) {
+		$res = $res.'<tr>
+				<td aria-label="Nama Produk">'.fetchNamaProduk($myrow['kode_produk']).'</td>
+				<td aria-label="Berat">'.($myrow['berat']).'</td>
+				<td aria-label="Kuantitas">'.($myrow['kuantitas']).'</td>
+				<td aria-label="Harga">Rp'.($myrow['harga']).'</td>
+				<td aria-label="Subtotal">Rp'.($myrow['sub_total']).'</td>
+				<td aria-label="Ulas"><button>Ulas</button></td>
+		</tr>'
+	}
+	return $res;
+
+}
+?>
 
 
 <!DOCTYPE html>
