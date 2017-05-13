@@ -98,13 +98,13 @@
                     <div class="form-group">
                         <label for="inputKategori">Kategori</label>
                         <select class="form-control" id="inputKategori" name="kategori" required>
-                            <option>...</option>
+                            <option>Choose one</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="inputSubKategori">Sub Kategori</label>
                         <select class="form-control" id="inputSubKategori" name="subKategori" required>
-                            <option>...</option>
+                            <option>Choose one</option>
                         </select>
                         <input type="hidden" name="command" value="addPromo">
                     </div>
@@ -116,5 +116,19 @@
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $.post("kategori.php", {'command': 'getKategori'}, function(response) {
+            $('#inputKategori').html(response);
+        });
+
+        $('#inputKategori').change(function() {
+            var kategori = $('#inputKategori').val();
+            $.post("kategori.php", {'command': 'getSubkategori', 'kategori': kategori}, function(response) {
+                $('#inputSubKategori').html(response);
+            });
+        });
+    });
+</script>
 </body>
 </html>                                		
