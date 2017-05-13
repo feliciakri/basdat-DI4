@@ -1,23 +1,99 @@
 <?php
+    session_start();
     include "dbconnect.php";
     $conn = connectDB();
 
     $sql = "SET search_path TO tokokeren";
     $result = pg_query($conn, $sql);
+
+    $_SESSION['loggeduser'] = "UcokBaba@FooBar.my";
+
     
     parse_str(file_get_contents("php://input"), $_POST);
     if(isset($_POST)) {
         if(isset($_POST['command'])) {
             if($_POST['command'] == 'addPromo') {
                 $id = getId();
-                $deskripsiPromo =  pg_escape_string($_POST['deskripsiPromo']);
+                $deskripsi =  pg_escape_string($_POST['deskripsi']);
                 $periodeAwal =  pg_escape_string($_POST['periodeAwal']);
                 $periodeAkhir =  pg_escape_string($_POST['periodeAkhir']);
                 $kodePromo =  pg_escape_string($_POST['kodePromo']);
                 $kategori =  pg_escape_string($_POST['kategori']);
                 $subKategori =  pg_escape_string($_POST['subKategori']);
-                $sql = "INSERT INTO JASA_KIRIM (deskripsiPromo, periodeAwal, periodeAkhir, kodePromo, kategori, subKategori) values ('$id', '$periodeAwal', '$periodeAkhir', '$kodePromo', '$kategori', '$subKategori')";
-                $result = pg_query($conn, $sql); 
+
+                if($deskripsi == "") {
+                    $_SESSION['error']['deskripsiKosong'] = "Kolom deskripsi tidak boleh kosong";
+                }
+
+                if($periodeAwal == "") {
+                    $_SESSION['error']['periodeAwalKosong'] = "Kolom periode awal tidak boleh kosong";
+                }
+                
+                if($periodeAkhir == "") {
+                    $_SESSION['error']['periodeAkhirKosong'] = "Kolom periode akhir tidak boleh kosong";
+                }
+
+                if(strtotime($periodeAwal) > strtotime($periodeAkhir)) {
+                    $_SESSION['error']['periodeInvalid'] = "Periode awal harus < periode akhir";   
+                }
+
+                if($kodePromo == "") {
+                    $_SESSION['error']['kodeKosong'] = "Kolom kode promo tidak boleh kosong";
+                }
+
+                if($kategori == "Choose one") {
+                    $_SESSION['error']['kategoriKosong'] = "Harus pilih salah satu kategori";
+                }
+
+                if($subKategori == "Choose one") {
+                    $_SESSION['error']['subkategoriKosong'] = "Harus pilih salah satu subkategori";
+                }
+
+                if (isset($_SESSION['error'])) {
+                    echo "<br><br><br>";
+                    foreach ($_SESSION['error'] as $message) {
+                        echo "<div class='alert alert-danger text-center alert-dismissible fade in' role='alert'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>".$message."</div>";
+                    } 
+                } else {
+                    $sql = "INSERT INTO promo (id, deskripsi, periode_awal, periode_akhir, kode)
+                            values ('$id', '$deskripsi', '$periodeAwal', '$periodeAkhir', '$kodePromo')";
+                    $result = pg_query($conn, $sql);
+
+                    $sql = "SELECT kode_produk FROM shipped_produk
+                            WHERE kategori = '$subKategori'";
+                    $result = pg_query($conn, $sql);
+                    if (pg_num_rows($result) > 0) {
+                        while($row = pg_fetch_assoc($result)) {
+                            $insertSql = "INSERT INTO promo_produk (id_promo, kode_produk)
+                                          VALUES ('$id', '$row[kode_produk]')";
+                            $query = pg_query($conn, $insertSql);
+                            if(!$query) {
+                                $_SESSION['message']="ERROR";
+                            }
+                        }
+                    }
+
+                    if($result){
+                        $_SESSION['message']="Promo Berhasil Ditambahkan";
+                        header("location: home.php");
+                    } else{
+                        $_SESSION['message']='Operasi Gagal';
+                        header("location: add_promo.php");
+                        exit();
+                    }
+                }
+
+                if (isset($_SESSION['message'])) {
+                    if ($_SESSION['message'] =="Jasa Kirim Berhasil Ditambahkan") {
+                        echo "<div class='alert alert-success text-center alert-dismissible fade in' role='alert'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>".$_SESSION['message']."</div>";
+                    }
+                    if ($_SESSION['message'] =="Operasi Gagal") {
+                        echo "<div class='alert alert-danger text-center alert-dismissible fade in' role='alert'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>".$_SESSION['message']."</div>";
+                    }
+                    
+                }
+                unset($_SESSION['message']);
+                unset($_SESSION['error']);
             }
         }
     }
@@ -78,32 +154,32 @@
         <h2 class="text-center">Tambah Promo</h2>
         <div class="row">
 	        <div class="col-sm-12">
-	            <form id="formTambahPromo">
+	            <form id="formTambahPromo" action="add_promo.php" method="post">
                     <div class="form-group">
                         <label for="inputDeskripsiPromo" class="control-label">Deskripsi</label>
-                        <textarea id="inputDeskripsiPromo" class="form-control" name="deskripsiPromo" form="formTambahFrom" required></textarea>
+                        <input id="inputDeskripsiPromo" class="form-control" name="deskripsi"></input>
                     </div>
 				    <div class="form-group">
 				        <label for="inputPeriodeAwal">Periode Awal</label>
-				        <input type="date" class="form-control" id="inputPeriodeAwal" name="periodeAwal" required>
+				        <input type="date" class="form-control" id="inputPeriodeAwal" name="periodeAwal">
 				    </div>
                     <div class="form-group">
                         <label for="inputPeriodeAkhir">Periode Akhir</label>
-                        <input type="date" class="form-control" id="inputPeriodeAkhir" name="periodeAkhir" required>
+                        <input type="date" class="form-control" id="inputPeriodeAkhir" name="periodeAkhir">
                     </div>
 				    <div class="form-group">
 				        <label for="inputLamaKirim">Kode Promo</label>
-				        <input type="text" class="form-control" id="inputKodePromo" name="kodePromo" placeholder="kodePromo" required>
+				        <input type="text" class="form-control" id="inputKodePromo" name="kodePromo" placeholder="kodePromo">
 				    </div>
                     <div class="form-group">
                         <label for="inputKategori">Kategori</label>
-                        <select class="form-control" id="inputKategori" name="kategori" required>
+                        <select class="form-control" id="inputKategori" name="kategori">
                             <option>Choose one</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="inputSubKategori">Sub Kategori</label>
-                        <select class="form-control" id="inputSubKategori" name="subKategori" required>
+                        <select class="form-control" id="inputSubKategori" name="subKategori">
                             <option>Choose one</option>
                         </select>
                         <input type="hidden" name="command" value="addPromo">

@@ -3,6 +3,8 @@
     include "dbconnect.php";
     $conn = connectDB();
 
+    $_SESSION['loggeduser'] = "UcokBaba@FooBar.my";
+
     $sql = "SET search_path TO tokokeren";
     $result = pg_query($conn, $sql);
     
