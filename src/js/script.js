@@ -1,74 +1,4 @@
 
-
-
-/*------------------------
-* transactionhistory
-*------------------------*/
-jQuery(document).ready(function($){
-	var tabs = $('.cd-tabs');
-	
-	tabs.each(function(){
-		var tab = $(this),
-			tabItems = tab.find('ul.cd-tabs-navigation'),
-			tabContentWrapper = tab.children('ul.cd-tabs-content'),
-			tabNavigation = tab.find('nav');
-
-		tabItems.on('click', 'a', function(event){
-			event.preventDefault();
-			var selectedItem = $(this);
-			if( !selectedItem.hasClass('selected') ) {
-				var selectedTab = selectedItem.data('content'),
-					selectedContent = tabContentWrapper.find('li[data-content="'+selectedTab+'"]'),
-					slectedContentHeight = selectedContent.innerHeight();
-				
-				tabItems.find('a.selected').removeClass('selected');
-				selectedItem.addClass('selected');
-				selectedContent.addClass('selected').siblings('li').removeClass('selected');
-				//animate tabContentWrapper height when content changes 
-				tabContentWrapper.animate({
-					'height': slectedContentHeight
-				}, 200);
-			}
-		});
-
-		//hide the .cd-tabs::after element when tabbed navigation has scrolled to the end (mobile version)
-		checkScrolling(tabNavigation);
-		tabNavigation.on('scroll', function(){ 
-			checkScrolling($(this));
-		});
-	});
-	
-	$(window).on('resize', function(){
-		tabs.each(function(){
-			var tab = $(this);
-			checkScrolling(tab.find('nav'));
-			tab.find('.cd-tabs-content').css('height', 'auto');
-		});
-	});
-
-	function checkScrolling(tabs){
-		var totalTabWidth = parseInt(tabs.children('.cd-tabs-navigation').width()),
-		 	tabsViewport = parseInt(tabs.width());
-		if( tabs.scrollLeft() >= totalTabWidth - tabsViewport) {
-			tabs.parent('.cd-tabs').addClass('is-ended');
-		} else {
-			tabs.parent('.cd-tabs').removeClass('is-ended');
-		}
-	}
-});
-
-/*ACCORDION WITH TOGGLE ICONS*/
-	function toggleIcon(e) {
-        $(e.target)
-            .prev('.panel-heading')
-            .find(".more-less")
-            .toggleClass('glyphicon-plus glyphicon-minus');
-    }
-    $('.panel-group').on('hidden.bs.collapse', toggleIcon);
-    $('.panel-group').on('shown.bs.collapse', toggleIcon);
-/*------------------------
-* end transaction history
-*------------------------*/
 /*------------------------
 * CART
 *------------------------*/
@@ -76,7 +6,7 @@ jQuery(document).ready(function($){
 $('a.remove').click(function(){
   event.preventDefault();
   $( this ).parent().parent().parent().hide( 400 );
- 
+
 })
 
 // Just for testing, show all items
@@ -99,15 +29,15 @@ var animating; //flag to prevent quick multi-click glitches
 $(".next").click(function(){
 	if(animating) return false;
 	animating = true;
-	
+
 	current_fs = $(this).parent();
 	next_fs = $(this).parent().next();
-	
+
 	//activate next step on progressbar using the index of next_fs
 	$("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
-	
+
 	//show the next fieldset
-	next_fs.show(); 
+	next_fs.show();
 	//hide the current fieldset with style
 	current_fs.animate({opacity: 0}, {
 		step: function(now, mx) {
@@ -123,12 +53,12 @@ $(".next").click(function(){
         'position': 'absolute'
       });
 			next_fs.css({'left': left, 'opacity': opacity});
-		}, 
-		duration: 800, 
+		},
+		duration: 800,
 		complete: function(){
 			current_fs.hide();
 			animating = false;
-		}, 
+		},
 		//this comes from the custom easing plugin
 		easing: 'easeInOutBack'
 	});
@@ -137,15 +67,15 @@ $(".next").click(function(){
 $(".previous").click(function(){
 	if(animating) return false;
 	animating = true;
-	
+
 	current_fs = $(this).parent();
 	previous_fs = $(this).parent().prev();
-	
+
 	//de-activate current step on progressbar
 	$("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
-	
+
 	//show the previous fieldset
-	previous_fs.show(); 
+	previous_fs.show();
 	//hide the current fieldset with style
 	current_fs.animate({opacity: 0}, {
 		step: function(now, mx) {
@@ -158,12 +88,12 @@ $(".previous").click(function(){
 			opacity = 1 - now;
 			current_fs.css({'left': left});
 			previous_fs.css({'transform': 'scale('+scale+')', 'opacity': opacity});
-		}, 
-		duration: 800, 
+		},
+		duration: 800,
 		complete: function(){
 			current_fs.hide();
 			animating = false;
-		}, 
+		},
 		//this comes from the custom easing plugin
 		easing: 'easeInOutBack'
 	});
@@ -215,7 +145,7 @@ jQuery(document).ready(function($){
 
 	//on mobile - open submenu
 	$('.has-children').children('a').on('click', function(event){
-		//prevent default clicking on direct children of .has-children 
+		//prevent default clicking on direct children of .has-children
 		event.preventDefault();
 		var selected = $(this);
 		selected.next('ul').removeClass('is-hidden').end().parent('.has-children').parent('ul').addClass('move-out');
@@ -247,7 +177,7 @@ jQuery(document).ready(function($){
 		var selected = $(this),
 			visibleNav = $(this).parent('ul').parent('.has-children').parent('ul');
 		selected.parent('ul').addClass('is-hidden').parent('.has-children').parent('ul').removeClass('move-out');
-	}); 
+	});
 
 	function toggleNav(){
 		var navIsVisible = ( !$('.cd-dropdown').hasClass('dropdown-is-active') ) ? true : false;
@@ -258,7 +188,7 @@ jQuery(document).ready(function($){
 				$('.has-children ul').addClass('is-hidden');
 				$('.move-out').removeClass('move-out');
 				$('.is-active').removeClass('is-active');
-			});	
+			});
 		}
 	}
 
@@ -291,7 +221,6 @@ jQuery(document).ready(function($){
 *------------------------*/
 /*------------------------
 * Pilih Toko dengan AJAX
-*------------------------*/
 
 // Get the <datalist> and <input> elements.
 var dataList = document.getElementById('json-datalist');
@@ -306,7 +235,7 @@ request.onreadystatechange = function(response) {
     if (request.status === 200) {
       // Parse the JSON
       var jsonOptions = JSON.parse(request.responseText);
-  
+
       // Loop over the JSON array.
       jsonOptions.forEach(function(item) {
         // Create a new <option> element.
@@ -316,7 +245,7 @@ request.onreadystatechange = function(response) {
         // Add the <option> element to the <datalist>.
         dataList.appendChild(option);
       });
-      
+
       // Update the placeholder text.
       input.placeholder = "e.g. datalist";
     } else {
@@ -330,9 +259,8 @@ request.onreadystatechange = function(response) {
 input.placeholder = "Loading options...";
 
 // Set up and make the request.
-request.open('GET', 'src/json.json', true); /*TODO : CREATE TOKO JSON*/
+request.open('GET', 'src/json.json', true); 
 request.send();
 
-/*------------------------
 * END Pilih Toko dengan AJAX
 *------------------------*/
