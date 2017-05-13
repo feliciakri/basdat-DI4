@@ -46,7 +46,24 @@ function fetchNamaPulsa($kodeProduk){
 
 	return $myrow['nama'];
 }
-?>
+
+function fetchNamaProduk($kodeProduk){
+	$query = "SELECT * FROM tokokeren.produk
+						WHERE kode_produk = '$kodeProduk'";
+
+	$result = pg_query($query);
+	if (!$result) {
+			echo "Problem with query " . $query . "<br/>";
+			echo pg_last_error();
+			exit();
+	}
+
+	$myrow = pg_fetch_assoc($result);
+
+	return $myrow['nama'];
+}
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -171,19 +188,23 @@ function fetchNamaPulsa($kodeProduk){
 												<div id="collapse'.$i2.'" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading'.$i2.'">
 													<div class="panel-body">
 														<b>Detail</b><br>
-														Nama Produk = '.($myrow['nama_toko']).'<br>
-														Status = '.(cekStatus($myrow['status'])).'<br>
-														Total bayar = '.($myrow['total_bayar']).'<br>
-														Alamat kirim = '.($myrow['alamat_kirim']).'<br>
-														Biaya kirim = '.($myrow['biaya_kirim']).'<br>
-														Nomor resi = '.($myrow['no_resi']).'<br>
-														Jasa kirim = '.($myrow['nama_jasa_kirim']).'<br>
-														<button>Ulas</button>
+														<table>
+															<thead>
+																<tr>
+																	<th>Nama Produk</th>
+																	<th>Berat</th>
+																	<th>Kuantitas</th>
+																	<th>Harga</th>
+																	<th>Subtotal</th>
+																	<th>Ulas</th>
+																</tr>
+															</thead>
+															<tbody></tbody>
+														</table>
 													</div>
 												</div>
 											</div>');
 											$i2++;
-											//echo ("<tr><td>".$myrow['no_invoice']."</td><td>".($myrow['nama_toko'])."</td><td>".$myrow['alamat_kirim']."</td><td>".($myrow['tanggal'])."</td></tr>");
 									}
 									?>
 
