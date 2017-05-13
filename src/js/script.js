@@ -221,7 +221,6 @@ jQuery(document).ready(function($){
 *------------------------*/
 /*------------------------
 * Pilih Toko dengan AJAX
-*------------------------*/
 
 // Get the <datalist> and <input> elements.
 var dataList = document.getElementById('json-datalist');
@@ -260,9 +259,8 @@ request.onreadystatechange = function(response) {
 input.placeholder = "Loading options...";
 
 // Set up and make the request.
-request.open('GET', 'src/json.json', true); /*TODO : CREATE TOKO JSON*/
+request.open('GET', 'src/json.json', true); 
 request.send();
 
-/*------------------------
 * END Pilih Toko dengan AJAX
 *------------------------*/

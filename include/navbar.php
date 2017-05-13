@@ -1,5 +1,4 @@
 <?php
-$_SESSION['loggeduser'] = "UcokBaba@FooBar.my";
 if (!isset($_SESSION['loggeduser'])) {
 	echo '<div class="navbar-fixed">
         <nav>
