@@ -3,35 +3,8 @@ session_start();
 /*if (!isset($_SESSION['loggeduser'])) {
 	header('location: login');
 }*/
-No
-Invoice
-Nama
-Toko
-Tanggal Status Total
-Bayar
-Alamat
-kirim
-Biaya
-kirim
-Nomor
-Resi
-Jasa Kirim ULASAN
 
 include('dbconnect.php');
-function selectTransaksi(){
-	try {
-		$conn = connectDB();
-		$loggeduid = $_SESSION['loggeduser'];
-		$sql = "SELECT no_invoice, nama_toko, tanggal, waktu_bayar, alamat_kirim, biaya_kirim, no_resi, nama_jasa_kirim FROM transaksi_shipped WHERE email_pembeli=$loggeduid";
-		$q = $conn->query($sql);
-		$q->setFetchMode(PDO::FETCH_ASSOC);
-		return $q;
-	} catch (PDOException $e){
-		die("Could not connect to the database $conn.$dbname :" . $e->getMessage());
-	}
-
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -45,7 +18,6 @@ function selectTransaksi(){
 	<link type="text/css" rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
 	<link type="text/css" rel="stylesheet" href="libs/materialize/css/materialize.min.css"  media="screen,projection"/>
 	<link rel="stylesheet" type="text/css" href="src/css/style.css">
-	<link rel="stylesheet" type="text/css" href="src/css/transaction-history.css">
 	<link rel="stylesheet" type="text/css" href="src/css/navbar.css">
 	<!-- insert more css file here -->
 
@@ -69,37 +41,31 @@ function selectTransaksi(){
 							<li><a data-content="new" href="#0">Daftar Produk</a></li>
 						</ul> <!-- cd-tabs-navigation -->
 					</nav>
-"SELECT no_invoice, nama_toko, tanggal, waktu_bayar, alamat_kirim, biaya_kirim, no_resi, nama_jasa_kirim FROM transaksi_shipped WHERE email_pembeli=$loggeduid";
+
 					<ul class="cd-tabs-content">
 						<li data-content="inbox" class="selected">
 							<div class="container demo">
+
+
 								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-									<?php $q=selectTransaksi()?>
-									<?php while ($row = $q->fetch()): ?>
-										<div class="panel panel-default">
-											<div class="panel-heading" role="tab" id="heading<?php echo htmlspecialchars($row['no_invoice'])?>">
-												<h4 class="panel-title">
-													<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseheading<?php echo htmlspecialchars($row['no_invoice'])?>" aria-expanded="true" aria-controls="collapseheading<?php echo htmlspecialchars($row['no_invoice'])?>">
-														<i class="more-less glyphicon glyphicon-plus"></i>
-														heading<?php echo htmlspecialchars($row['no_invoice'])?><br>heading<?php echo htmlspecialchars($row['tanggal'])?><br>
-													</a>
-												</h4>
-											</div>
-											<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-												<div class="panel-body">
-													<b>Detail</b><br>
-																
-													<button>Ulas</button>
-												</div>
+
+									<div class="panel panel-default">
+										<div class="panel-heading" role="tab" id="headingOne">
+											<h4 class="panel-title">
+												<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+													<i class="more-less glyphicon glyphicon-plus"></i>
+													Nomor Produk #1<br>Tanggal Beli<br>
+												</a>
+											</h4>
+										</div>
+										<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+											<div class="panel-body">
+												<b>Detail</b><br>
+												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.<br>
+												<button>Ulas</button>
 											</div>
 										</div>
-                    <?php endwhile; ?>
-										<tr>
-												<td><?php echo htmlspecialchars($row['lastname']) ?></td>
-												<td><?php echo htmlspecialchars($row['firstname']); ?></td>
-												<td><?php echo htmlspecialchars($row['jobtitle']); ?></td>
-										</tr>
-
+									</div>
 
 									<div class="panel panel-default">
 										<div class="panel-heading" role="tab" id="headingTwo">
@@ -270,7 +236,6 @@ function selectTransaksi(){
 						</li>
 
 					</ul> <!-- cd-tabs-content -->
-
 				</div> <!-- cd-tabs -->
 
 			</div><!--End of row1-->
@@ -285,7 +250,6 @@ function selectTransaksi(){
 
 	<script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="src/js/jquery.menu-aim.js"></script> <!-- menu aim -->
-	<script type="text/javascript" src="src/js/transaction-history.js"></script>
 	<script type="text/javascript" src="src/js/script.js"></script>
 	<script type="text/javascript" src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="libs/materialize/js/materialize.min.js"></script>
