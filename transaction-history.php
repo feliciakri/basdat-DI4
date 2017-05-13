@@ -1,10 +1,8 @@
 <?php
 session_start();
-/*if (!isset($_SESSION['loggeduser'])) {
-	header('location: login');
-}*/
-
+$_SESSION['loggeduser'] = "astandell6g@washington.edu";
 include('dbconnect.php');
+
 ?>
 
 <!DOCTYPE html>
