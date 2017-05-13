@@ -62,38 +62,6 @@
             }
             return true;
         }
-
-        function validateEmail() {
-            var e = document.forms["form-regis"]["email"].value;
-
-            $.ajax({
-                url:'getEmail.php'
-                data : {
-                    command: 'get',
-                    email: $('#insert-email').val(),
-                },
-                type: 'post',
-                success: function(email) {
-
-                }
-            })
-
-function changePrice() {
-    $.ajax({
-        url: 'getHarga.php',
-        data : {
-            command: 'ambilHarga',
-            tema: $("#insert-tema").val(),
-        },
-        type: 'post',
-        success:function(harga) {
-            $("#insert-harga").val(parseInt(harga));
-        }
-    });
-}
-
-
-        }
     </script>
     <div class="text-center">
         <div class="jumbotron">
