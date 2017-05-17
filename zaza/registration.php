@@ -55,6 +55,7 @@
                 if(pg_num_rows($checkAdmin) > 0) {
                     $_SESSION['loggedrole'] == "pelanggan";
                     $_SESSION['loggeduser'] == "email";
+                    console.log($email);
                     header("Location:../homeOther.php");
                 } else {
                     $_SESSION['loggedrole'] == "admin";
