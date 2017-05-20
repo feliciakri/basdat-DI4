@@ -1,5 +1,4 @@
 <?php
-$_SESSION['loggeduser'] = "UcokBaba@FooBar.my";
 if (!isset($_SESSION['loggeduser'])) {
 	echo '<div class="navbar-fixed">
         <nav>
@@ -8,9 +7,9 @@ if (!isset($_SESSION['loggeduser'])) {
               <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
               <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="home.php">Home</a></li>
-                <li>Not logged in</li>
-                <li><a href="login.php" class="btn transparent nav-btn">Login</a></li>
-								<li><a href="registration.php" class="btn transparent nav-btn">Register</a></li>
+                <li>Not logged in &nbsp </li>
+                <li><button class="btn transparent nav-btn" data-toggle="modal" data-target="#loginModal" title="Untuk kembali keren">Login</button> &nbsp </li>
+								<li><button class="btn transparent nav-btn" data-toggle="modal" data-target="#daftarModal" data-placement="bottom" title="Untuk mendapatkan akun">Register</button></li>
               </ul>
               <ul class="side-nav" id="mobile-menu">
 								<li><a href="home.php">Home</a></li>
