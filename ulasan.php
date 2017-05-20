@@ -1,4 +1,6 @@
 <?php
+    session_start();
+    $_SESSION['loggeduser'] = "dadang@gmail.com";
     include "dbconnect.php";
     $conn = connectDB();
 
@@ -9,7 +11,7 @@
     if(isset($_POST)) {
         if(isset($_POST['command'])) {
             if($_POST['command'] == 'ulasProduk') {
-                $email = pg_escape_string($_SESSION['user']);
+                $email = pg_escape_string($_SESSION['loggeduser']);
                 $kodeProduk =  pg_escape_string($_GET['kode_produk']);
                 $tanggal = date("Y/m/d");
                 $rating =  pg_escape_string($_POST['rating']);
@@ -60,7 +62,14 @@
 	            <form id="formUlasan" action="ulasan.php" method="post">
 				    <div class="form-group">
 				        <label for="kodeProduk" class="control-label">Kode Produk</label>
-				        <p>Kode Produk</p>
+                        <h4>
+                            <?php
+                                if(isset($_GET['kode'])) {
+                                    echo $_GET['kode'];
+                                    echo $_SESSION['loggeduser'];
+                                }
+                            ?>
+                        </h4>
 				    </div>
 				    <div class="form-group">
 				        <label for="inputRating" class="control-label">Rating</label>
