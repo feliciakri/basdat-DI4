@@ -28,8 +28,8 @@
             } else {
                 $sql = "INSERT into pengguna(email, password, nama, jenis_kelamin, tgl_lahir, no_telp, alamat) values ('$email', '$password', '$nama', '$jenis_kelamin', '$tgl_lahir', '$no_telp', '$alamat')";    
                 if($result = pg_query($conn, $sql)) {
-                    print "Data added.<br/>";
-                    header("Location: registration.php");
+                    echo '<script language="javascript">alert("Berhasil daftar. Masuk ke halaman utama...")</script>';
+                    //header("Location: ../homeOther.php");
                 } else {
                     die("Error: $sql");
                 }
@@ -49,17 +49,33 @@
         $set = "SET search_path TO TOKOKEREN";
         if($result = pg_query($conn, $set)) {
             $checkEmail = "SELECT * FROM pengguna WHERE password = '$password' AND email = '$email'";
-            $checkResult = pg_query($checkEmail);
+            $checkResult = pg_query($conn, $checkEmail);
             if(pg_num_rows($checkResult) > 0) {
+                echo '<script language="javascript">alert("GA MASUK")</script>';
                 $checkAdmin = "SELECT * FROM pelanggan WHERE email = '$email'";
-                if(pg_num_rows($checkAdmin) > 0) {
-                    $_SESSION['loggedrole'] == "pelanggan";
-                    $_SESSION['loggeduser'] == "email";
+                $checkResult1 = pg_query($conn, $checkAdmin);
+                if(pg_num_rows($checkResult1) > 0) {
+                    echo '<script language="javascript">alert("KE SINI NIH")</script>';
+                    $checkPenjual = "SELECT * FROM pelanggan WHERE email = '$email' AND is_penjual = TRUE";
+                    $checkResult2 = pg_query($conn, $checkPenjual);
+                    if(pg_num_rows($checkResult2)  > 0) {
+                        echo '<script language="javascript">alert("JUAL")</script>';
+                        $_SESSION['loggedrole'] = "penjual";
+                        $_SESSION['loggeduser'] = $email;
+                        header("Location:../home.php");
+                    } else if(pg_num_rows($checkResult2)  < 1){
+                        echo '<script language="javascript">alert("BELI")</script>';
+                        $_SESSION['loggedrole'] = "pembeli";
+                        $_SESSION['loggeduser'] = $email;
+                        header("Location:../home.php");
+                    }
                 } else {
-                    $_SESSION['loggedrole'] == "admin";
-                    $_SESSION['loggeduser'] == "email";
+                    echo '<script language="javascript">alert("ADMIN")</script>';
+                    $_SESSION['loggedrole'] = "admin";
+                    $_SESSION['loggeduser'] = $email;
+                    header("Location:../home.php");
                 }
-                header("Location: ../home.php");
+                echo '<script language="javascript">alert("Berhasil login. Masuk ke halaman utama...")</script>';
             } else {
                 echo '<script language="javascript">alert("Login error : email/password salah")</script>';
             }
