@@ -47,7 +47,7 @@ if (!isset($_SESSION['loggeduser'])) {
           <li><a href="cart.php">My Cart</a></li>
           <li>Open Shop &nbsp &nbsp</li>';
     if(($_SESSION['loggedrole']) == "penjual") {
-      echo '<li><a href="">Add Produk</a></li>';
+      echo '<li>Add Produk &nbsp &nbsp</li>';
     }
     echo '<li><p>Logged in as <b>' . $loggeduid . '</b></p></li>
           <li><a href="logout.php" class="btn transparent nav-btn">Log Out</a></li>
@@ -74,7 +74,7 @@ if (!isset($_SESSION['loggeduser'])) {
 <script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="libs/materialize/js/materialize.min.js"></script>
-<script type="text/javascript" src="navbar.js"></script>
+<script type="text/javascript" src="include/navbar.js"></script>
 <script type="text/javascript">
   $( document ).ready(function(){   
     $(".button-collapse").sideNav();
