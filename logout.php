@@ -1,5 +1,5 @@
 <?php
   session_start();
   session_destroy();
-  header("Location: zaza/registration.php");
+  header("Location: home.php");
 ?>

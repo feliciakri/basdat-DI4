@@ -1,40 +1,38 @@
 <?php
 	session_start();
 	include 'dbconnect.php';
-    $conn = connectDB();
 
-    $sql = "SET search_path TO tokokeren";
-    $result = pg_query($conn, $sql);
+	function addCategory() {
+		$conn = connectDB();
 
-	if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-		$command = $_POST['command'];
-		if($command == "getKategori") {
-			$sql = "SELECT * FROM kategori_utama";
-	    	$result = pg_query($conn, $sql);
-	    	if (pg_num_rows($result) > 0) {
-	    		echo "<option>Choose one</option>";
-		        while($row = pg_fetch_assoc($result)) {
-		        	echo "<option value='$row[kode]'>$row[nama]</option>";
-		        }
-		    }
-		} elseif($command == "getSubkategori") {
-			$kategori = $_POST['kategori'];
-			if($kategori != null) {
-				$sql = "SELECT S.kode, S.nama FROM kategori_utama K, sub_kategori S
-					WHERE K.kode = S.kode_kategori
-					AND S.kode_kategori = '$kategori'";
-		    	$result = pg_query($conn, $sql);
-		    	if (pg_num_rows($result) > 0) {
-		    		echo "<option>Choose one</option>";
-			        while($row = pg_fetch_assoc($result)) {
-			        	echo "<option value='$row[kode]'>$row[nama]</option>";
-			        }
-			    }
-			}
-		}
+		$kode_kategori = pg_escape_string($_POST['kode-kategori']);
+		$nama_kategori = pg_escape_string($_POST['nama-kategori']);
+
+		$set = "SET search_path TO TOKOKEREN";
+        if($result = pg_query($conn, $set)) {
+            $checkCategory = "SELECT * FROM kategori_utama WHERE kode = '$kode_kategori' AND nama = '$nama_kategori'";
+            $checkResult = pg_query($checkCategory);
+
+            if(pg_num_rows($checkResult) > 0) {
+                echo '<script language="javascript">alert("Kategori sudah ada")</script>';
+            } else {
+                $sql = "INSERT into kategori_utama(kode, nama) values ('$kode_kategori', '$nama_kategori')";    
+                if($result = pg_query($conn, $sql)) {
+                    echo '<script language="javascript">alert("Berhasil daftar. Masuk ke halaman utama...")</script>';
+                    header("Location: kategori.php");
+                } else {
+                    die("Error: $sql");
+                }
+            }
+        }
+        pg_close($conn);
 	}
 
-    pg_close($conn);
+	if (isset ($_REQUEST['command']) && $_SERVER['REQUEST_METHOD'] === 'POST') {
+        if($_POST['command'] === 'addCategory') {
+            addCategory();
+        }
+    }
 ?>
 <!DOCTYPE html>
 	<html lang="en">
@@ -48,14 +46,14 @@
 		<link rel="stylesheet" type="text/css" href="home.css">
 	</head>
 	<body>
-		<div  id="kategoriModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div id="kategoriModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			<div class="modal-content" role="document">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				<h4 class="modal-title" id="daftarModalLabel">Form Membuat Kategori dan Sub Kategori</h4>
 				</div>
 				<div class="modal-body">
-					<form>
+					<form action="kategori.php" method="POST">
 						<div class="form-group">
 							<label for="kode-kategori">Kode Kategori</label>
 							<input type="text" class="form-control" id="insert-kode-kategori" name="kode-kategori" placeholder="Kode kategori">
@@ -71,8 +69,8 @@
 				       	<div id="tambah-sub">
 				            <label for="sub-kategori-1">Sub Kategori 1</label>
 					        <div class="content">
-					            <span>Nama: <input type="text" name="sub-nama" value="" /></span>
-					            <span>Kode: <input type="text" name="sub-kode" value="" /></span>
+					            <span>Nama: <input type="text" id="insert-nama-sub" name="sub-nama" value="" /></span>
+					            <span>Kode: <input type="text" id="insert-kode-sub" name="sub-kode" value="" /></span>
 					   	    </div>
 					        <br>
 				        </div>
@@ -90,7 +88,7 @@
 			    counter++;
 			    var objTo = document.getElementById('tambah-sub');
 			    var divtest = document.createElement("div");
-			    divtest.innerHTML = '<label for="sub-kategori-' + counter + '">Sub Kategori ' + counter +'</label><div class="content"><span>Nama: <input type="text" " name="sub-nama" value="" /></span>&nbsp<span>Kode: <input type="text"  name="sub-kode" value="" /></span></div><br>';
+			    divtest.innerHTML = '<label for="sub-kategori-' + counter + '">Sub Kategori ' + counter +'</label><div class="content"><span>Nama: <input type="text" id="insert-nama-sub" " name="sub-nama" value="" /></span>&nbsp<span>Kode: <input type="text" id="insert-kode-sub" name="sub-kode" value="" /></span></div><br>';
 			    
 			    objTo.appendChild(divtest);
 			}

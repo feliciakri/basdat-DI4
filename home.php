@@ -60,24 +60,25 @@
                         echo '<script language="javascript">alert("JUAL")</script>';
                         $_SESSION['loggedrole'] = "penjual";
                         $_SESSION['loggeduser'] = $email;
-                        header("Location:../home.php");
+                        header("Location: home.php");
                     } else if(pg_num_rows($checkResult2)  < 1){
                         echo '<script language="javascript">alert("BELI")</script>';
                         $_SESSION['loggedrole'] = "pembeli";
                         $_SESSION['loggeduser'] = $email;
-                        header("Location:../home.php");
+                        header("Location:home.php");
                     }
                 } else {
                     echo '<script language="javascript">alert("ADMIN")</script>';
                     $_SESSION['loggedrole'] = "admin";
                     $_SESSION['loggeduser'] = $email;
-                    header("Location:../home.php");
+                    header("Location: home.php");
                 }
                 echo '<script language="javascript">alert("Berhasil login. Masuk ke halaman utama...")</script>';
             } else {
                 echo '<script language="javascript">alert("Login error : email/password salah")</script>';
             }
         }
+        pg_close($conn);
     }
 
     if (isset ($_REQUEST['command']) && $_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -99,8 +100,8 @@
 		<link href="src/img/favicon.ico?" rel="icon" type="image/x-icon">
 		<link type="text/css" rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
 		<link type="text/css" rel="stylesheet" href="libs/materialize/css/materialize.min.css"  media="screen,projection"/>
-		<!--<link rel="stylesheet" type="text/css" href="src/css/style.css">
-		--><link rel="stylesheet" type="text/css" href="src/css/navbar.css">
+		<link rel="stylesheet" type="text/css" href="src/css/navbar.css">
+		<script type="text/javascript" src="src/js/navbar.js"></script>
 	</head>
 	<body>
 		<?php
@@ -204,6 +205,7 @@
 		<script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
 		<script type="text/javascript" src="src/js/jquery.menu-aim.js"></script> <!-- menu aim -->
 		<script type="text/javascript" src="src/js/script.js"></script>
+		<script type="text/javascript" src="src/js/navbar.js"></script>
 		<script type="text/javascript" src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="libs/materialize/js/materialize.min.js"></script>
 	</body>
