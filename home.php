@@ -28,8 +28,10 @@
             } else {
                 $sql = "INSERT into pengguna(email, password, nama, jenis_kelamin, tgl_lahir, no_telp, alamat) values ('$email', '$password', '$nama', '$jenis_kelamin', '$tgl_lahir', '$no_telp', '$alamat')";    
                 if($result = pg_query($conn, $sql)) {
-                    echo '<script language="javascript">alert("Berhasil daftar. Masuk ke halaman utama...")</script>';
-                    //header("Location: ../homeOther.php");
+                    echo '<script language="javascript">alert("Berhasil daftar. Login untuk masuk ke halaman utama...")</script>';
+                    $_SESSION['loggedrole'] = "pembeli";
+                    $_SESSION['loggeduser'] = $email;
+                    header("Location: home.php");
                 } else {
                     die("Error: $sql");
                 }

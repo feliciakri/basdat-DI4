@@ -10,19 +10,40 @@
 
 		$set = "SET search_path TO TOKOKEREN";
         if($result = pg_query($conn, $set)) {
-            $checkCategory = "SELECT * FROM kategori_utama WHERE kode = '$kode_kategori' AND nama = '$nama_kategori'";
-            $checkResult = pg_query($checkCategory);
+            $checkCategory = "SELECT * FROM kategori_utama WHERE kode = '$kode_kategori'";
+            $checkResult = pg_query($conn, $checkCategory);
 
             if(pg_num_rows($checkResult) > 0) {
-                echo '<script language="javascript">alert("Kategori sudah ada")</script>';
+                echo '<script language="javascript">alert("Kategori sudah ada, harap mengganti input kode dan nama kategori")</script>';
             } else {
-                $sql = "INSERT into kategori_utama(kode, nama) values ('$kode_kategori', '$nama_kategori')";    
-                if($result = pg_query($conn, $sql)) {
-                    echo '<script language="javascript">alert("Berhasil daftar. Masuk ke halaman utama...")</script>';
-                    header("Location: kategori.php");
-                } else {
-                    die("Error: $sql");
-                }
+            	$sqlCat = "INSERT into kategori_utama(kode, nama) values ('$kode_kategori', '$nama_kategori')";
+            	$resCat = pg_query($conn, $sqlCat);
+
+            	$counter = 1;
+            	$sub_nama = 'sub-nama-' . $counter;
+            	$sub_kode = 'sub-kode-' . $counter;
+
+            	while(isset($_POST[$sub_nama]) && isset($_POST[$sub_kode])) {
+            		$sname = pg_escape_string($_POST[$sub_nama]);
+					$scode = pg_escape_string($_POST[$sub_kode]);
+
+					$checkSub = "SELECT * FROM sub_kategori WHERE kode = '$scode'";
+        			$checkSubRes = pg_query($conn, $checkSub);
+            		if(pg_num_rows($checkSubRes) > 0) {
+            			echo '<script language="javascript">alert("Sub kategori sudah ada, harap mengganti dengan sub kategori yang belum ada di database kami")</script>';
+            			$sqlDel = "DELETE FROM kategori_utama WHERE kode = '$kode_kategori'";
+            			$resDel = pg_query($conn, $sqlDel);
+            		} else {
+            			$sqlSub = "INSERT into sub_kategori(kode, kode_kategori, nama) values ('$scode', '$kode_kategori', '$sname')";
+            			$resSub = pg_query($conn, $sqlSub);
+            		}
+
+            		$counter+= 1;
+            		$sub_nama = 'sub-nama-' . $counter;
+            		$sub_kode = 'sub-kode-' . $counter;
+
+            		echo '<script language="javascript">alert("Berhasil menambahkan kategori dan sub kategori!")</script>';
+            	}
             }
         }
         pg_close($conn);
@@ -43,7 +64,6 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="home.css">
 	</head>
 	<body>
 		<div id="kategoriModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -56,11 +76,11 @@
 					<form action="kategori.php" method="POST">
 						<div class="form-group">
 							<label for="kode-kategori">Kode Kategori</label>
-							<input type="text" class="form-control" id="insert-kode-kategori" name="kode-kategori" placeholder="Kode kategori">
+							<input type="text" class="form-control" id="insert-kode-kategori" name="kode-kategori" placeholder="Kode kategori" required>
 						</div>
 						<div class="form-group">
 							<label for="nama-kategori">Nama Kategori</label>
-							<input type="text" class="form-control" id="insert-nama-kategori" name="nama-kategori" placeholder="Nama kategori">
+							<input type="text" class="form-control" id="insert-nama-kategori" name="nama-kategori" placeholder="Nama kategori" required>
 						</div>
 						<div class="modal-header">
 							<h4 class="modal-title" id="tambahSub">Sub Kategori</h4>
@@ -69,8 +89,8 @@
 				       	<div id="tambah-sub">
 				            <label for="sub-kategori-1">Sub Kategori 1</label>
 					        <div class="content">
-					            <span>Nama: <input type="text" id="insert-nama-sub" name="sub-nama" value="" /></span>
-					            <span>Kode: <input type="text" id="insert-kode-sub" name="sub-kode" value="" /></span>
+					            <span>Nama: <input type="text" id="insert-nama-sub" name="sub-nama-1" required/></span>
+					            <span>Kode: <input type="text" id="insert-kode-sub" name="sub-kode-1" required/></span>
 					   	    </div>
 					        <br>
 				        </div>
@@ -88,8 +108,8 @@
 			    counter++;
 			    var objTo = document.getElementById('tambah-sub');
 			    var divtest = document.createElement("div");
-			    divtest.innerHTML = '<label for="sub-kategori-' + counter + '">Sub Kategori ' + counter +'</label><div class="content"><span>Nama: <input type="text" id="insert-nama-sub" " name="sub-nama" value="" /></span>&nbsp<span>Kode: <input type="text" id="insert-kode-sub" name="sub-kode" value="" /></span></div><br>';
-			    
+			    divtest.innerHTML = '<label for="sub-kategori-' + counter + '">Sub Kategori ' + counter +'</label><div class="content"><span>Nama: <input type="text" id="insert-nama-sub" " name="sub-nama-' + counter + '" required /></span>&nbsp<span>Kode: <input type="text" id="insert-kode-sub" name="sub-kode-' + counter + '" required /></span></div><br>';
+			    console.log(counter);
 			    objTo.appendChild(divtest);
 			}
       
