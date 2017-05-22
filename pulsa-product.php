@@ -1,13 +1,3 @@
-<?php
-    /*session_start();
-    if (!isset($_SESSION['loggeduser'])) {
-        header('location: login');
-    }
-    
-    include('dbconnect.php');
-
-	$nomoriduser = $_SESSION['loggedusernumber'];*/
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,15 +9,14 @@
     <link href="src/img/favicon.ico?" rel="icon" type="image/x-icon">
     <link type="text/css" rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="libs/materialize/css/materialize.min.css"  media="screen,projection"/>
-    <link rel="stylesheet" type="text/css" href="src/css/style.css">
     <link rel="stylesheet" type="text/css" href="src/css/navbar.css">
     <!-- insert more css file here -->
 
 </head>
 <body>
 		<?php
-            /*include('navbar.php');*/
-        ?>	
+            include('navbar.php');
+        ?>
     <div class="container">
         <div class="row">
             <div class="wrap">
@@ -35,41 +24,95 @@
                 <div class="divider"></div>
             </div>
             <div class="row">
-                 <!-- multistep form -->
-                    <form id="msform">
-                      <!-- progressbar -->
-                      <ul id="progressbar">
-                        <li class="active">Pick a Provider</li>
-                        <li>Pick Your Package</li>
-                        <li>Phone and Payment Details</li>
-                      </ul>
-                      <!-- fieldsets -->
-                      <fieldset>
-                        <h2 class="fs-title">Pick Your Package</h2>
-                          <h3 class="fs-subtitle">Lengkap Shay</h3>
-                        <input type="dropdown" name="package" placeholder="package" />
-                        <input type="button" name="next" class="next action-button" value="Next" />
-                      </fieldset>
-                      <fieldset>
-                        <h2 class="fs-title">Phone Detail</h2>
-                        <h3 class="fs-subtitle">Dinego Shay</h3>
-                        <input type="text" name="phone" placeholder="Phone" />
-                        <input type="button" name="previous" class="previous action-button" value="Previous" />
-                        <input type="button" name="next" class="next action-button" value="Next" />
-                      </fieldset>
-                      <fieldset>
-                        <h2 class="fs-title">Payment Detail</h2>
-                        <h3 class="fs-subtitle">Harga Cincay</h3>
-                        <input type="text" name="payment" placeholder="Payment" />
-                        <input type="button" name="previous" class="previous action-button" value="Previous" />
-                          <input type="submit" name="submit" class="submit action-button" value="Submit" />
-                      </fieldset>
-                    </form>
+              <?php
+              session_start();
+              include('dbconnect.php');
+              $conn = connectDB();
+
+
+              parse_str(file_get_contents("php://input"), $_POST);
+              function buypulsa(){
+                $no_invoice = "V000".rand(1,1000);
+                $tanggal = date("Y-m-d");
+                $waktu_bayar = date("Y-m-d");;
+                $status = '2';
+                $email_pembeli= $_SESSION['loggeduser'];
+                $nominal = pg_escape_string($_POST['nominalval']);
+                $nomor = pg_escape_string($_POST['noHP']);
+                $kode_produk = pg_escape_string($_POST['optradio']);
+                $sql = "INSERT INTO TRANSAKSI_PULSA (no_invoice, tanggal, waktu_bayar,status, email_pembeli, nominal,nomor,kode_produk)
+                values ('$no_invoice','$tanggal', '$waktu_bayar', '$status', '$email_pembeli', '$nominal', '$nomor', '$kode_produk')";
+                $result = pg_query($conn, $sql);
+                if($result){
+                    echo "Transaksi Pulsa Berhasil Ditambahkan";
+                }
+              }
+
+
+
+              if (isset ($_REQUEST['command']) && $_SERVER['REQUEST_METHOD'] === 'POST') {
+                  if($_POST['command'] === 'buypulsa') {
+                      buypulsa();
+                    }
+              }
+              ?>
+
+
+              <!-- Products List Start -->
+              <?php
+              $result = pg_query($conn,"SET SEARCH_PATH TO TOKOKEREN;
+              SELECT produk_pulsa.kode_produk as kode, produk.nama as nama, produk.harga as harga, produk.deskripsi as deskripsi, produk_pulsa.nominal as nominal
+              FROM produk_pulsa
+              INNER JOIN produk ON produk.kode_produk=produk_pulsa.kode_produk;");
+
+              if (!$result) {
+                  echo "Problem with query " . $query . "<br/>";
+                  echo pg_last_error();
+                  exit();
+              }
+              echo'
+              <form id="formpulsa" action="pulsa.php" method="post">
+              <table>
+              <thead>
+              <tr>
+              <th>Nama produk</th>
+              <th>Kode produk</th>
+              <th>Harga</th>
+              <th>Deskripsi</th>
+              <th>Nominal</th>
+              </tr>
+              </thead>
+              <tbody>';
+              while($myrow = pg_fetch_assoc($result)) {
+              echo '
+              <tr>
+                  <td>
+                     <div class="radio">
+                         <label><input type="radio" id="pulsa'.($myrow['kode']).'" name="optradio">'.($myrow['nama']).'</label>
+                     </div>
+                   </td>
+                  <td>'.($myrow['kode']).'</td>
+                  <td>'.($myrow['harga']).'</td>
+                  <td>'.($myrow['deskripsi']).'</td>
+                  <td><input type="hidden" name="nominalval" value="'.($myrow['nominal']).'">'.($myrow['nominal']).'</td>
+              </tr>';
+              }
+              echo '</tbody>
+              </table>';
+
+              ?>
+
+              <br><br>
+              Nomor HP : <input type="text" id="inputNoHP" name="noHP" placeholder="Masukkan nomor HP anda disini">
+              <input type="hidden" name="command" value="buypulsa">
+              <br><button type="submit">Submit</button>
+              </form>
+
             </div><!--End of row1-->
         </div>
     </div>
-	
-	
+
+
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="src/js/jquery.menu-aim.js"></script> <!-- menu aim -->
@@ -78,4 +121,4 @@
     <script type="text/javascript" src="libs/materialize/js/materialize.min.js"></script>
     <!-- insert more js file here -->
 </body>
-</html>		
+</html>
