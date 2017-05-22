@@ -1,6 +1,5 @@
 <?php
 session_start();
-$_SESSION['loggeduser'] = "astandell6g@washington.edu";
 include('dbconnect.php');
 function selectTransaksi(){
 		debug("masuktrans");
